@@ -1,0 +1,397 @@
+
+/*************************************************/
+/********* Menu Module Slide-in Mobile Menu  *********/
+/*************************************************/
+
+@media only screen and (max-width: 980px) {
+
+  .mobile-menu-slide-in .et_mobile_menu {
+    display:block!important;
+    min-height: 100vh;
+    height: 100vh;
+    right: 0;
+    z-index: 9998;
+    overflow: scroll;
+    border-top: none;
+    padding-top: 20px!important;
+    padding-bottom: 70px !important;
+    box-sizing:border-box;
+  }
+  .mobile-menu-slide-in .et_mobile_menu {
+    position:absolute;
+  }
+  .mobile-menu-slide-in .et_mobile_menu li a {
+    width: 100%;
+    float: left;
+    margin: 0;
+    transition: .2s;
+  }
+  .mobile-menu-slide-in .et_mobile_menu li li {
+      padding-left: 0;
+      margin-left: -10px;
+  }
+  .mobile-menu-slide-in .mobile_nav.closed .et_mobile_menu {
+    -webkit-transform: translateX(130%);
+    -moz-transform: translateX(130%);
+    -ms-transform: translateX(130%);
+    -o-transform: translateX(130%);
+    transform: translateX(130%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.4s 0s;
+    -moz-transition: -moz-transform 0.4s 0s;
+    -ms-transition: -ms-transform 0.4s 0s;
+    -o-transition: -o-transform 0.4s 0s;
+    transition: transform 0.4s 0s;
+  }
+  .mobile-menu-slide-in .mobile_nav.opened .et_mobile_menu {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: -webkit-transform 0.4s 0s;
+    -moz-transition: -moz-transform 0.4s 0s;
+    -ms-transition: -ms-transform 0.4s 0s;
+    -o-transition: -o-transform 0.4s 0s;
+    transition: transform 0.4s 0s
+  }
+  .mobile-menu-slide-in .mobile_nav.opened .mobile_menu_bar:before {
+    content: "\4d";
+    z-index: 999999;
+  }
+  .mobile-menu-slide-in .mobile_nav.closed .mobile_menu_bar:before {
+    content: "a";
+    z-index: 999999;
+  }
+  .divi-hacks-mobile-menu-slide-in.et_header_style_split .mobile_menu_bar, .divi-hacks-mobile-menu-slide-in.et_header_style_left .mobile_menu_bar {
+    z-index:9999
+  }
+  .mobile-menu-slide-in #et-top-navigation {
+    padding-right: 5px
+  }
+  .et_header_style_centered.divi-hacks-mobile-menu-slide-in:not(.divi-hacks-app-mobile-header) .et_mobile_menu {
+    top: auto;
+    margin-top: 25px;
+  }
+  .et_header_style_split.divi-hacks-mobile-menu-slide-in:not(.divi-hacks-app-mobile-header) .et_mobile_menu {
+    top: auto;
+    margin-top: 29px;
+  }
+
+}
+
+@media only screen and (min-width: 481px) {
+  .mobile-menu-slide-in .et_mobile_menu {
+    width:320px;
+    margin-left: calc(100% - 320px)
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .divi-hacks-mobile-menu-slide-in.divi-hacks-app-mobile-header .et_mobile_menu {
+    width:260px;
+    margin-left: calc(100% - 260px)
+  }
+  .divi-hacks-mobile-menu-slide-in.divi-hacks-app-mobile-header:not(.divi-hacks-fixed-mobile-header) .et_mobile_menu {
+    width:260px;
+    margin-left: calc(100% - 249px)
+  }
+  .divi-hacks-mobile-menu-slide-in:not(.divi-hacks-app-mobile-header) .et_mobile_menu {
+    width:260px;
+    margin-left: calc(100% - 218px)
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .mobile-menu-slide-in .et_mobile_menu {
+    width:100%;
+    margin-left: 0
+  }
+}
+
+/**************************************************************/
+/************ Menu Modules Full-Screen Mobile Menu ************/
+/**************************************************************/
+@media screen and (max-width: 980px) {
+  .mobile-menu-fullscreen a.mobile_nav.opened .mobile_menu_bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .mobile-menu-fullscreen span.mobile_menu_bar {
+    z-index: 9999;
+  }
+  .mobile-menu-fullscreen.et_pb_fullwidth_menu .et_pb_row, 
+  .mobile-menu-fullscreen.et_pb_menu .et_pb_row {
+    min-height: auto !important;
+    height: 100% !important;
+  }
+  .mobile-menu-fullscreen.et_pb_fullwidth_menu .et_mobile_menu,
+  .mobile-menu-fullscreen.et_pb_menu .et_mobile_menu {
+    position: fixed !important;
+    top: 0px !important;
+    bottom: 0px !important;
+  }
+  .et_pb_fullwidth_menu--without-logo .et_pb_menu__menu>nav>ul>li>a,
+  .et_pb_menu--without-logo .et_pb_menu__menu>nav>ul>li>a {
+    padding-bottom: 0px;
+  }
+  .admin-bar .mobile-menu-fullscreen .et_mobile_menu {
+    top: 0
+  }
+  .mobile-menu-fullscreen .et_mobile_menu li ul, .mobile-menu-fullscreen .et_pb_fullwidth_menu .et_mobile_menu li ul {
+    padding-left: 0;
+  }
+  .mobile-menu-fullscreen .et_mobile_menu li li {
+    padding-left: 0;
+  }
+  .mobile-menu-fullscreen .et_mobile_menu {
+    left: 0;
+    position: fixed;
+    z-index: 9998;
+    overflow-y: scroll !important;
+    padding: 15vh 0;
+    height: 100vh;
+    width: 100vw;
+    border-top: none;
+    top: 0;
+    box-sizing:border-box;
+  }
+  .mobile-menu-fullscreen .et_mobile_menu li a {
+    text-align: center;
+    font-size: 1.55em;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  .mobile-menu-fullscreen .mobile_nav ul.et_mobile_menu li ul li a {
+    margin: auto;
+  }
+  .mobile-menu-fullscreen .et_mobile_menu li a:hover {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .mobile-menu-fullscreen .mobile_nav.opened .mobile_menu_bar:before {
+    content: "\4d";
+    z-index: 999999;
+    position: sticky;
+  }
+  .mobile-menu-fullscreen .mobile_nav.closed .mobile_menu_bar:before {
+    content: "a";
+    z-index: 999999;
+  }
+}
+
+/*************************************************/
+/************ Full-Screen Mobile Menu ************/
+/*************************************************/
+
+@media screen and (max-width: 980px) {
+
+  .divi-hacks-mobile-menu-fullscreen.admin-bar #main-header.et-fixed-header .et_mobile_menu {
+    top: 0
+  }
+  .divi-hacks-mobile-menu-fullscreen .et_mobile_menu .menu-item-has-children>a {
+    background-color: transparent;
+  }
+  .divi-hacks-mobile-menu-fullscreen .et_mobile_menu li ul, .divi-hacks-mobile-menu-fullscreen .et_pb_fullwidth_menu .et_mobile_menu li ul {
+    padding-left: 0;
+  }
+  .divi-hacks-mobile-menu-fullscreen .et_mobile_menu li li {
+    padding-left: 0;
+  }
+  .divi-hacks-mobile-menu-fullscreen.et_header_style_centered .mobile_nav {
+    background-color: transparent
+  }
+  .divi-hacks-mobile-menu-fullscreen .et_mobile_menu {
+    left: 0;
+    position: fixed;
+    z-index: 9998;
+    overflow-y: scroll !important;
+    background-color: rgb(10,10,10);
+    background-color: rgba(10,10,10,0.9);
+    padding: 15vh 0;
+    height: 100vh;
+    width: 100vw;
+    border-top: none;
+    top: 0;
+    box-sizing:border-box;
+  }
+  .divi-hacks-mobile-menu-fullscreen .et_mobile_menu li a {
+    text-align: center;
+    font-size: 1.55em;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color:#fff;
+  }
+  .divi-hacks-mobile-menu-fullscreen .et_mobile_menu .menu-item-has-children > a {
+    font-weight: inherit;
+  }
+
+  .divi-hacks-mobile-menu-fullscreen .mobile_nav ul.et_mobile_menu .current_page_item > a {
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .divi-hacks-mobile-menu-fullscreen .mobile_nav ul.et_mobile_menu li ul li a {
+    font-size: 1.05em!important;
+    margin: auto;
+  }
+  .divi-hacks-mobile-menu-fullscreen .et_mobile_menu li a:hover {
+    color: #999;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .divi-hacks-mobile-menu-fullscreen .mobile_nav.opened .mobile_menu_bar:before {
+    content: "\4d";
+    z-index: 999999;
+    position: fixed;
+    right: 30px !important;
+    top: 20px;
+    left: calc(100% - 60px);
+  }
+  .divi-hacks-mobile-menu-fullscreen.divi-hacks-app-mobile-header .mobile_nav.opened .mobile_menu_bar:before {
+    top: 10px;
+    margin-left: 17px;
+  }
+  .divi-hacks-mobile-menu-fullscreen .mobile_nav.closed .mobile_menu_bar:before {
+    content: "a";
+    z-index: 999999;
+  }
+  .divi-hacks-mobile-menu-fullscreen span.mobile_menu_bar {
+    z-index: 9999;
+  }
+}
+
+/*************************************************/
+/********* Simple Slide-in Mobile Menu  *********/
+/*************************************************/
+
+@media only screen and (max-width: 980px) {
+
+  .divi-hacks-mobile-menu-slide-in .et_mobile_menu .menu-item-has-children > a {
+    background-color: transparent
+  }
+
+  .divi-hacks-mobile-menu-slide-in .et_mobile_menu {
+    display:block!important;
+    min-height: 100vh;
+    height: 100vh;
+    right: 0;
+    z-index: 9998;
+    overflow: scroll;
+    border-top: none;
+    padding-top: 20px!important;
+    padding-bottom: 70px !important;
+    box-sizing:border-box;
+  }
+  .divi-hacks-mobile-menu-slide-in:not(.divi-hacks-fixed-mobile-header) .et_mobile_menu {
+    position:absolute;
+  }
+  .divi-hacks-mobile-menu-slide-in.divi-hacks-fixed-mobile-header .et_mobile_menu {
+    position:fixed;
+  }
+  .z9 { z-index:99999 !important; }
+  .divi-hacks-mobile-menu-slide-in .et_mobile_menu li a {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin: 0;
+    transition: .2s;
+    padding: 12px;
+  }
+  .divi-hacks-mobile-menu-slide-in .et_mobile_menu li li {
+      padding-left: 0;
+      margin-left: -10px;
+  }
+  .divi-hacks-mobile-menu-slide-in .mobile_nav.closed .et_mobile_menu {
+    -webkit-transform: translateX(130%);
+    -moz-transform: translateX(130%);
+    -ms-transform: translateX(130%);
+    -o-transform: translateX(130%);
+    transform: translateX(130%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.4s 0s;
+    -moz-transition: -moz-transform 0.4s 0s;
+    -ms-transition: -ms-transform 0.4s 0s;
+    -o-transition: -o-transform 0.4s 0s;
+    transition: transform 0.4s 0s;
+  }
+  .divi-hacks-mobile-menu-slide-in .et_mobile_menu .menu-item-has-children > a {
+    font-weight: inherit;
+  }
+  .divi-hacks-mobile-menu-slide-in .mobile_nav.opened .et_mobile_menu {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: -webkit-transform 0.4s 0s;
+    -moz-transition: -moz-transform 0.4s 0s;
+    -ms-transition: -ms-transform 0.4s 0s;
+    -o-transition: -o-transform 0.4s 0s;
+    transition: transform 0.4s 0s
+  }
+  .divi-hacks-mobile-menu-slide-in .mobile_nav.opened .mobile_menu_bar:before {
+    content: "\4d";
+    z-index: 999999;
+  }
+  .divi-hacks-mobile-menu-slide-in .mobile_nav.closed .mobile_menu_bar:before {
+    content: "a";
+    z-index: 999999;
+  }
+  .divi-hacks-mobile-menu-slide-in.et_header_style_split .mobile_menu_bar, .divi-hacks-mobile-menu-slide-in.et_header_style_left .mobile_menu_bar {
+    z-index:9999
+  }
+  .divi-hacks-mobile-menu-slide-in #et-top-navigation {
+    padding-right: 5px
+  }
+  .et_header_style_centered.divi-hacks-mobile-menu-slide-in:not(.divi-hacks-app-mobile-header) .et_mobile_menu {
+    top: auto;
+    margin-top: 25px;
+  }
+  .et_header_style_split.divi-hacks-mobile-menu-slide-in:not(.divi-hacks-app-mobile-header) .et_mobile_menu {
+    top: auto;
+    margin-top: 29px;
+  }
+
+}
+
+@media only screen and (min-width: 481px) {
+  .divi-hacks-mobile-menu-slide-in .et_mobile_menu {
+    width:320px;
+    margin-left: calc(100% - 320px)
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .divi-hacks-mobile-menu-slide-in.divi-hacks-app-mobile-header .et_mobile_menu {
+    width:260px;
+    margin-left: calc(100% - 260px)
+  }
+  .divi-hacks-mobile-menu-slide-in.divi-hacks-app-mobile-header:not(.divi-hacks-fixed-mobile-header) .et_mobile_menu {
+    width:260px;
+    margin-left: calc(100% - 249px)
+  }
+  .divi-hacks-mobile-menu-slide-in:not(.divi-hacks-app-mobile-header) .et_mobile_menu {
+    width:260px;
+    margin-left: calc(100% - 218px)
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .divi-hacks-mobile-menu-slide-in .et_mobile_menu {
+    width:100%;
+    margin-left: 0
+  }
+}

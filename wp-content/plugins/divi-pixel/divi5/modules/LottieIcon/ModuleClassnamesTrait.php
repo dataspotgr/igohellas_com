@@ -1,0 +1,42 @@
+<?php
+namespace DIPI\Modules\LottieIcon;
+
+if (!defined('ABSPATH')) {
+  die('Direct access forbidden.');
+}
+
+use ET\Builder\Packages\Module\Options\Text\TextClassnames;
+use ET\Builder\Packages\Module\Options\Element\ElementClassnames;
+
+trait ModuleClassnamesTrait
+{
+  public static function module_classnames($args)
+  {
+    $classnames_instance = $args['classnamesInstance'];
+    $attrs = $args['attrs'];
+
+    // $tiltParallax = $attrs['tiltBox']['advanced']['tiltParallax']['desktop']['value'] ?? 'off';
+
+
+    // $classnames_instance->add(
+    //   $tiltParallax === 'on' ? 'dipi-tilt-image--has-parallax' : ''
+    // );
+
+    // // Text Options.
+    // $classnames_instance->add(
+    //   TextClassnames::text_options_classnames(
+    //     $attrs['module']['advanced']['text'] ?? [],
+    //     [
+    //       'orientation' => false,
+    //     ]
+    //   ),
+    //   true
+    // );
+
+
+
+    // Module.
+    // $classnames_instance->add(ElementClassnames::classnames(['attrs' => $attrs['module']['decoration'] ?? [],]));
+    // $classnames_instance->add(ElementClassnames::classnames(['attrs' => ['link' => $attrs['module']['advanced']['link']] ?? [],]));
+  }
+}

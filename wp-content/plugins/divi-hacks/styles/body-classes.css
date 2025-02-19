@@ -1,0 +1,28 @@
+
+/*************************************************/
+/****************** Body Classes ******************/
+/*************************************************/
+
+.hide-footer #main-footer {
+    height: 0;
+    overflow:hidden;
+}
+.hide-main-header #main-header {
+    height: 0;
+    overflow:hidden;
+}
+.hide-top-header:not(.divi-hacks-before-header) #top-header {
+    height: 0;
+    overflow:hidden;
+}
+.hide-top-header.divi-hacks-before-header #top-header .container {
+    height: 0;
+    overflow: hidden;
+    padding-top: 0;
+}
+.hide-main-header #page-container {
+    padding-top: 0 !important;
+}
+.hide-logo #logo {
+    display: none;
+}

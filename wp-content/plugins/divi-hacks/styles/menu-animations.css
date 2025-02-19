@@ -1,0 +1,112 @@
+
+/************************************************************/
+/****** Adds animation effects to menu items on hover *******/
+/************************************************************/
+
+.divi-hacks-animenu-1 #top-menu .current_page_item a::before {
+ content: "";
+ position: absolute;
+ z-index: 2;
+ left: 0;
+ right: 0;
+}
+.divi-hacks-animenu-1 #top-menu > li:before {
+ content: "";
+ position: absolute;
+ z-index: -2;
+ left: 0;
+ right: 100%;
+ bottom: 20%;
+ background: transparent; /*** COLOR OF THE LINE ***/
+ height: 3px; /*** THICKNESS OF THE LINE ***/
+ border-bottom: 3px solid;
+ -webkit-transition-property: right;
+ -moz-transition-property: right;
+ -ms-transition-property: right;
+ -o-transition-property: right;
+ transition-property: right;
+ -webkit-transition-duration: 0.3s;
+ -moz-transition-duration: 0.3s;
+ -ms-transition-duration: 0.3s;
+ -o-transition-duration: 0.3s;
+ transition-duration: 0.3s;
+ -webkit-transition-timing-function: ease-out;
+ -moz-transition-timing-function: ease-out;
+ -ms-transition-timing-function: ease-out;
+ -o-transition-timing-function: ease-out;
+ transition-timing-function: ease-out;
+}
+.divi-hacks-animenu-1 #top-menu > li.centered-inline-logo-wrap:before {
+    display: none;
+}
+.divi-hacks-animenu-1 #top-menu li:hover {
+ opacity: 1 !important;
+}
+.divi-hacks-animenu-1 #top-menu li:hover:before {
+ right: 0;
+}
+.divi-hacks-animenu-1 #top-menu li li:before {
+ bottom: 10%;
+}
+.divi-hacks-animenu-2 #top-menu li:not(.menu-item-has-children):not(.current_page_item):hover a {
+ box-shadow: 0 5px 0 0;
+}
+.divi-hacks-animenu-2 #top-menu li li a {
+ padding-bottom: 6px !important;
+}
+.divi-hacks-animenu-2 #top-menu li.current_page_item > a,
+.divi-hacks-animenu-2 .et-fixed-header #top-menu li.current_page_item > a {
+  border: 5px solid;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px !important;
+  padding-left: 10px;
+}
+
+@keyframes grow {
+  from { border-top-width: 0; }
+  to  { border-top-width: 5px; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes grow {
+  from { border-top-width: 0; }
+  to  { border-top-width: 5px; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes grow {
+  from { border-top-width: 0; }
+  to  { border-top-width: 5px; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes grow {
+  from { border-top-width: 0; }
+  to  { border-top-width: 5px; }
+}
+.divi-hacks-animenu-3 #top-menu > li.page_item::before {
+  height:5px;
+  content:"";
+  width:100%;
+  left:0;
+  top:-15px;
+  position:absolute;
+  background:transparent;
+  border-top-width:5px;
+  border-top-style:solid;
+  opacity:1;
+  animation: grow 0.5s;
+}
+.divi-hacks-animenu-3 #top-menu li li a {
+  line-height: 1.2em;
+}
+.divi-hacks-animenu-3 #top-menu > li > a { 
+  opacity:1 !important; 
+}
+.divi-hacks-animenu-1 #top-menu > li:not(:last-child),
+.divi-hacks-animenu-3 #top-menu > li:not(:last-child) {
+  padding-right:0;
+  margin-right:22px;
+}

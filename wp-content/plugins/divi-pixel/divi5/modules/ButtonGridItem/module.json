@@ -1,0 +1,189 @@
+{
+	"name": "dipi/button-grid-item",
+	"d4Shortcode": "dipi_button_grid_child",
+	"title": "Pixel Button Grid Item",
+	"titles": "Pixel Button Grid Items",
+	"category": "module",
+	"attributes": {
+		"module": {
+			"type": "object",
+			"selector": "{{selector}}",
+			"default": {
+				"meta": {
+					"adminLabel": {
+						"desktop": {"value": "Pixel Button Grid Item"}
+					}
+				},
+
+				"advanced": {
+					"itemType": {
+						"desktop": {"value": "Text"}
+					},
+					"text": {
+						"text": {
+							"desktop": {
+								"value": {
+									"orientation": "center"
+								}
+							}
+						}
+					}
+				}
+			},
+			"styleProps": {
+				"sizing": {
+					"propertySelectors": {
+						"desktop": {
+							"value": {
+								"margin-left": "{{selector}}.et_pb_module",
+								"margin-right": "{{selector}}.et_pb_module"
+							}
+						}
+					},
+					"important": {
+						"desktop": {
+							"value": {
+								"margin-left": true,
+								"margin-right": true
+							}
+						}
+					}
+				}
+			}
+		},
+		"button_type": {
+      "type": "object",
+      "inlineEditor": "plainText",
+      "childrenSanitizer": "et_core_esc_previously",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": "button"
+          }
+        }
+      }
+    },
+    "button": {
+      "selector": "{{selector}} .dipi-button-wrap.dipi-button-grid",
+      "attributes": {
+				"class": "dipi-button-grid dipi-button-wrap"
+			},
+      "innerContent": {
+        "desktop": {
+          "value": {
+            "text": "Click Here",
+            "linkUrl": "#",
+            "linkTarget": "off"
+          }
+        }
+      },
+      "default": {
+				"decoration": {
+					"button": {
+						"desktop": {
+							"value": {
+								"enable": "off",
+								"icon": {
+									"enable": "on"
+								}
+							}
+						}
+					},
+					"border": {
+						"desktop": {
+							"value": {
+								"styles": {
+									"all": {
+										"color": ""
+									}
+								}
+							}
+						}
+					},
+					"font": {
+						"font": {
+							"desktop": {
+								"value": {
+									"color": ""
+								}
+							}
+						}
+					}
+				}
+			},
+			"elementType": "button",
+			"elementProps": {
+				"hasWrapper": false,
+				"allowEmptyUrl": true
+			},
+			"styleProps": {
+				"font": {
+					"important": {
+						"font": {
+							"desktop": {
+								"value": {
+									"color": true,
+									"font-size": true,
+									"letter-spacing": true
+								}
+							}
+						}
+					}
+				},
+				"spacing": {
+					"important": true,
+					"propertySelectors": {
+						"desktop": {
+							"value": {
+								"margin": "{{selector}} .dipi-button-wrap",
+								"padding": "{{selector}} .dipi-button-wrap"
+							}
+						}
+					}
+				},
+				"alignment": {
+					"propertySelectors": {
+						"desktop": {
+							"value": {
+								"justify-content": "{{selector}} .dipi-button-wrap"
+							}
+						}
+					}
+				}
+			}
+    },
+    "text_style": {
+      "type": "object",
+			"selector": "{{selector}} .dipi-text-wrap",
+
+			"tagName": "span",
+			"inlineEditor": "plainText",
+			"attributes": {
+				"class": "dipi-text-wrap"
+			},
+			"childrenSanitizer": "et_core_esc_previously"
+    },
+		"text_info": {
+      "type": "object",
+      "inlineEditor": "plainText",
+      "childrenSanitizer": "et_core_esc_previously",
+      "default": {
+        "innerContent": {
+          "desktop": {
+            "value": ""
+          }
+        }
+      }
+    }
+	},
+	"customCssFields": {
+    "button_type" :{
+      "subName": "button_type",
+      "selectorSuffix":".dipi-button-wrap"
+    },
+    "text_type" :{
+        "subName": "text_type",
+        "selectorSuffix":".dipi-text-wrap"
+    }
+  }
+}

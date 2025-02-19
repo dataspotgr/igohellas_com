@@ -1,0 +1,104 @@
+
+/*************************************************/
+/****************** Lightboxes ******************/
+/*************************************************/
+
+.mfp-wrap {
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.mfp-wrap.mfp-ready {
+    opacity: 1;
+}
+.mfp-wrap .mfp-close:active {
+    top:0;
+}
+.mfp-bg:not(.mfp-fade):not([style*="background"]):not(.dh):not(.dhscroll) {
+ background: transparent !important;
+}
+.mfp-bg.dh[class*="animate"].mfp-ready,
+.mfp-bg.dhscroll[class*="animate"].mfp-ready {
+    animation:none !important;
+}
+.lightbox-overlay {
+    background: var(--overlay-background-color, rgba(0,0,0,0.8)) !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    position: fixed;
+}
+[class*="lightbox-content"] ol {
+    list-style-type: decimal;
+    margin-left:1em;
+}
+[class*="lightbox-content"] ul {
+    list-style-type: inherit;
+    margin-left:1em;
+}
+.et-fb .et_pb_module[class*="lightbox-content"]:before {
+    line-height: 1.5em;
+}
+.et-fb .et_pb_row[class*="lightbox-content"] > .et-fb-mousetrap, 
+.et-fb .et_pb_section[class*="lightbox-content"] > .et-fb-mousetrap, 
+.et-fb .et_pb_module[class*="lightbox-content"],
+.et-fb .et_pb_row.exit-popup > .et-fb-mousetrap:before, 
+.et-fb .et_pb_section.exit-popup > .et-fb-mousetrap:before, 
+.et-fb .et_pb_module.exit-popup:before {
+    border: 2px solid #c9c9c9;
+}
+.et-fb .et_pb_row[class*="lightbox-content"] > .et-fb-mousetrap:before, 
+.et-fb .et_pb_section[class*="lightbox-content"] > .et-fb-mousetrap:before, 
+.et-fb .et_pb_module[class*="lightbox-content"]:before,
+.et-fb .et_pb_row.exit-popup > .et-fb-mousetrap:before, 
+.et-fb .et_pb_section.exit-popup > .et-fb-mousetrap:before, 
+.et-fb .et_pb_module.exit-popup:before {
+    background: #c9c9c9;
+    color: #000;
+    width: calc(100% + 4px);
+    position: absolute;
+    bottom: 100%;
+    left: -2px;
+    padding: 0 10px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size:10px;
+    font-weight:bold;
+    height:auto;
+}
+.et-fb .et_pb_row[class*="lightbox-content"] > .et-fb-mousetrap:before, 
+.et-fb .et_pb_section[class*="lightbox-content"] > .et-fb-mousetrap:before, 
+.et-fb .et_pb_module[class*="lightbox-content"]:before {
+    content: 'lightbox-content';
+}
+.et-fb .et_pb_row.exit-popup > .et-fb-mousetrap:before, 
+.et-fb .et_pb_section.exit-popup > .et-fb-mousetrap:before, 
+.et-fb .et_pb_module.exit-popup:before {
+    content: 'exit-popup';
+}
+.mfp-content .lightbox-content:not(:first-child),
+.mfp-content [class*="lightbox-content-"]:not(:first-child) {
+    display:none;
+}
+.lightbox-trigger,
+[class*="lightbox-trigger-"] { 
+  cursor:pointer; 
+}
+.lightbox-content,
+[class*="lightbox-content-"] { 
+  position:relative; 
+  z-index: unset !important;
+}
+.lightbox-content .mfp-close,
+[class*="lightbox-content-"] .mfp-close,
+.mfp-wrap .mfp-container [class*="lightbox-content-"] button:hover {
+  color: var(--close-icon-color, #999999) !important;
+  background-color: var(--close-button-color) !important;
+  opacity:1 !important;
+}
+.lightbox-content .mfp-close:active,
+[class*="lightbox-content-"] .mfp-close:active {
+    top:0 !important;
+}

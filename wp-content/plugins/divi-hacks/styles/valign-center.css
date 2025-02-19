@@ -1,0 +1,134 @@
+
+/*************************************************************/
+/****** Vertically Center content inside sections, rows, and modules  *******/
+/*************************************************************/
+
+.divi-hacks-valign-center .et_pb_section.valign-center-section,
+.divi-hacks-valign-center .et_pb_section.valign-center,
+.divi-hacks-valign-center .et_pb_section.valign-bottom-section,
+.divi-hacks-valign-center .et_pb_section.valign-bottom,
+.divi-hacks-valign-center .et_pb_section.valign-space-evenly-section,
+.divi-hacks-valign-center .et_pb_section.valign-space-evenly,
+.divi-hacks-valign-center .et_pb_section.valign-space-between-section,
+.divi-hacks-valign-center .et_pb_section.valign-space-between,
+.divi-hacks-valign-center .et_pb_section.valign-space-around-section,
+.divi-hacks-valign-center .et_pb_section.valign-space-around {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  direction: ltr;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.divi-hacks-valign-center .et_pb_section.valign-center-section,
+.divi-hacks-valign-center .et_pb_section.valign-center {
+  align-content: center;
+}
+.divi-hacks-valign-center .et_pb_section.valign-bottom-section,
+.divi-hacks-valign-center .et_pb_section.valign-bottom {
+  align-content: flex-end;
+}
+.divi-hacks-valign-center .et_pb_section.valign-space-evenly-section,
+.divi-hacks-valign-center .et_pb_section.valign-space-evenly {
+  align-content: space-evenly;
+}
+.divi-hacks-valign-center .et_pb_section.valign-space-between-section,
+.divi-hacks-valign-center .et_pb_section.valign-space-between {
+  align-content: space-between;
+}
+.divi-hacks-valign-center .et_pb_section.valign-space-around-section,
+.divi-hacks-valign-center .et_pb_section.valign-space-around {
+  align-content: space-around;
+}
+.divi-hacks-valign-center .et_pb_row.valign-center-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-center .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-bottom-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-bottom .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-space-evenly-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-space-evenly .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-space-between-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-space-between .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-space-around-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-space-around .et_pb_column {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+.divi-hacks-valign-center .et_pb_row.valign-center-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-center .et_pb_column {
+  justify-content: center;
+}
+.divi-hacks-valign-center .et_pb_row.valign-bottom-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-bottom .et_pb_column {
+  justify-content: flex-end;
+}
+.divi-hacks-valign-center .et_pb_row.valign-space-evenly-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-space-evenly .et_pb_column {
+  justify-content: space-evenly;
+}
+.divi-hacks-valign-center .et_pb_row.valign-space-between-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-space-between .et_pb_column {
+  justify-content: space-between;
+}
+.divi-hacks-valign-center .et_pb_row.valign-space-around-row .et_pb_column,
+.divi-hacks-valign-center .et_pb_row.valign-space-around .et_pb_column {
+  justify-content: space-around;
+}
+.divi-hacks-valign-center .et_pb_row.valign-center-row,
+.divi-hacks-valign-center .et_pb_row.valign-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  direction: ltr;
+  align-content: center;
+}
+.divi-hacks-valign-center .et_pb_module.valign-center-module,
+.divi-hacks-valign-center .et_pb_module.valign-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width:980px) {
+  .divi-hacks-valign-center .et_pb_row.valign-center-row,
+  .divi-hacks-valign-center .et_pb_row.valign-center {
+    flex-wrap:wrap;
+  }
+}
+@media all and (-ms-high-contrast:none) {
+  .divi-hacks-valign-center .et_pb_section.valign-center-section, 
+  .divi-hacks-valign-center .et_pb_row.valign-center-row, 
+  .divi-hacks-valign-center .et_pb_row.valign-center-row .et_pb_column, 
+  .divi-hacks-valign-center .et_pb_module.valign-center-module,
+  .divi-hacks-valign-center .et_pb_section.valign-center, 
+  .divi-hacks-valign-center .et_pb_row.valign-center, 
+  .divi-hacks-valign-center .et_pb_row.valign-center .et_pb_column, 
+  .divi-hacks-valign-center .et_pb_module.valign-center {
+    display:block;
+  } /* IE10 */
+  *::-ms-backdrop, 
+  .divi-hacks-valign-center .et_pb_section.valign-center-section,
+  .divi-hacks-valign-center .et_pb_section.valign-center {
+    display:block !important;
+  } /* IE11 */
+  *::-ms-backdrop, 
+  .divi-hacks-valign-center .et_pb_row.valign-center-row, 
+  .divi-hacks-valign-center .et_pb_row.valign-center-row .et_pb_column, 
+  .divi-hacks-valign-center .et_pb_module.valign-center-module,
+  .divi-hacks-valign-center .et_pb_row.valign-center, 
+  .divi-hacks-valign-center .et_pb_row.valign-center .et_pb_column, 
+  .divi-hacks-valign-center .et_pb_module.valign-center {
+    display:block !important;
+  } /* IE11 */
+}

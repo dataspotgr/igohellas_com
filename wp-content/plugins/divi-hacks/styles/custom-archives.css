@@ -1,0 +1,176 @@
+
+/***************  Custom Archives ******************/
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts] p.post-meta {
+    font-size: 0px !important;
+    line-height: inherit;
+}
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts] .post-meta span.published, 
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts] .author:after,
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts] .post-meta .author:before {
+    font-size: var(--postmeta-size, 14px) !important;
+}
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts] .post-meta .author:before {
+    content: 'By ';
+}
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts] .post-meta span.published:after, 
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts] .post-meta a[rel*="category"]:after, 
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts] .post-meta .author:after {
+    content: "|";
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-meta .post-meta,
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-date .post-meta .published,
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-categories .post-meta a[rel*="category"],
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-comments .post-meta .comments-number,
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-image .entry-featured-image-url,
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-author .post-meta .author,
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-pagination .pagination,
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-excerpt .dh-excerpt,
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-sidebar #sidebar { 
+    display:none !important; 
+}
+.dh-shortcode-avatar {
+  width:100%;
+}
+body:not(.et-fb):not([class*="search-results"]) .show-on-results,
+body:not(.et-fb):not([class*="search-no-results"]) .show-on-results { 
+  display:none;
+}
+body.search-results .show-on-results,
+body.search-no-results .show-on-results { 
+  display:inherit !important;
+}
+.show-button a.et_pb_button.et_pb_read_more_button {
+    display: block;
+    width: max-content;
+    width: -moz-max-content;
+    margin-top: 15px;
+}
+.show-button.button-center a.et_pb_button.et_pb_read_more_button {
+    margin-left: auto;
+    margin-right: auto;
+}
+.show-button.button-left a.et_pb_button.et_pb_read_more_button {
+    margin-left: 0;
+    margin-right: auto;
+}
+.show-button.button-right a.et_pb_button.et_pb_read_more_button {
+    margin-left: auto;
+    margin-right: 0;
+} 
+.et-fb .search-results:before,
+.et-fb .archive:before,
+body.search-results .show-on-results:before,
+body.search-no-results .show-on-results:before {
+  background: #c9c9c9;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  left:0;
+  right: 0;
+  padding: 5px 10px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size:18px;
+  font-weight:normal;
+  height:auto;
+  display:block;
+}
+.et-fb .show-on-results:before {
+  content:'Only visible on search results page.';
+}
+.et-fb .search-results:before {
+  content:'Search Results (not visible in visual builder)';
+}
+.et-fb .archive:before {
+  content:'Archive of Posts found (not visible in visual builder)';
+}
+li.dh-excerpt {
+    border-left: 0;
+    padding-left: 0;
+}
+#et-main-area > [id^="divi-hacks-"] .archive[data-posts].no-sidebar #left-area {
+    width:100%;
+    padding-right:0px;
+}
+#divi-hacks-search article,
+#divi-hacks-tag article,
+#divi-hacks-cptarchive article,
+#divi-hacks-archive article,
+#divi-hacks-author article,
+#divi-hacks-category article {
+  background: var(--article-background) !important;
+  -webkit-border-radius: var(--article-border-radius, inherit);
+  -moz-border-radius: var(--article-border-radius, inherit);
+  -ms-border-radius: var(--article-border-radius, inherit);
+  -o-border-radius: var(--article-border-radius, inherit);
+  border-radius: var(--article-border-radius, inherit);
+  border-top: var(--article-border-top, inherit) !important;
+  border-right: var(--article-border-right, inherit) !important;
+  border-bottom: var(--article-border-bottom, inherit) !important;
+  border-left: var(--article-border-left, inherit) !important;
+  overflow:hidden !important;
+  padding: var(--article-padding, inherit);
+  margin: var(--article-margin, inherit);
+  display: var(--article-display, block);
+  width: var(--article-width, inherit);
+  vertical-align:top;
+}
+#divi-hacks-search .archive.grid:not(.default) article,
+#divi-hacks-tag .archive.grid:not(.default) article,
+#divi-hacks-cptarchive .archive.grid:not(.default) article,
+#divi-hacks-archive .archive.grid:not(.default) article,
+#divi-hacks-author .archive.grid:not(.default) article,
+#divi-hacks-category .archive.grid:not(.default) article {
+  background: var(--article-background) !important;
+  -webkit-box-shadow: var(--article-shadow, 0 0 50px rgba(0,0,0,0.1)) !important;
+  -moz-box-shadow: var(--article-shadow, 0 0 50px rgba(0,0,0,0.1)) !important;
+  -ms-box-shadow: var(--article-shadow, 0 0 50px rgba(0,0,0,0.1)) !important;
+  -o-box-shadow: var(--article-shadow, 0 0 50px rgba(0,0,0,0.1)) !important;
+  box-shadow: var(--article-shadow, 0 0 50px rgba(0,0,0,0.1)) !important;
+}
+#divi-hacks-search .archive.default:not(.grid) article,
+#divi-hacks-tag .archive.default:not(.grid) article,
+#divi-hacks-cptarchive .archive.default:not(.grid) article,
+#divi-hacks-archive .archive.default:not(.grid) article,
+#divi-hacks-author .archive.default:not(.grid) article,
+#divi-hacks-category .archive.default:not(.grid) article {
+  background: var(--article-background) !important;
+  -webkit-box-shadow: var(--article-shadow, inherit) !important;
+  -moz-box-shadow: var(--article-shadow, inherit) !important;
+  -ms-box-shadow: var(--article-shadow, inherit) !important;
+  -o-box-shadow: var(--article-shadow, inherit) !important;
+  box-shadow: var(--article-shadow, inherit) !important;
+}
+#divi-hacks-search article .post-meta,
+#divi-hacks-category article .post-meta,
+#divi-hacks-archive article .post-meta,
+#divi-hacks-author article .post-meta,
+#divi-hacks-tag article .post-meta,
+#divi-hacks-cptarchive article .post-meta,
+#divi-hacks-search article .post-meta a,
+#divi-hacks-category article .post-meta a,
+#divi-hacks-archive article .post-meta a,
+#divi-hacks-author article .post-meta a,
+#divi-hacks-tag article .post-meta a,
+#divi-hacks-cptarchive article .post-meta a {
+  font-size: var(--postmeta-size, 14px);
+  font-weight: var(--postmeta-weight, inherit);
+  color: var(--postmeta-color, inherit);
+  text-align: var(--postmeta-align, inherit);
+  text-transform: var(--postmeta-transform, inherit);
+}
+#divi-hacks-search article .post-meta a,
+#divi-hacks-category article .post-meta a,
+#divi-hacks-archive article .post-meta a,
+#divi-hacks-author article .post-meta a,
+#divi-hacks-tag article .post-meta a,
+#divi-hacks-cptarchive article .post-meta a {
+  font-size: var(--postmeta-link-size, 14px);
+  font-weight: var(--postmeta-link-weight, inherit);
+  color: var(--postmeta-link-color, inherit);
+  text-decoration: var(--postmeta-link-decoration, inherit);
+  text-transform: var(--postmeta-link-transform, inherit);
+}

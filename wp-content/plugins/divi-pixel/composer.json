@@ -1,0 +1,10 @@
+{
+  "name": "dipi/dipi",
+  "autoload": {
+    "psr-4": {
+      "DIPI\\Modules\\": "divi5/modules/",
+      "DIPI\\Traits\\": "divi5/traits/"
+    }
+  },
+  "require": {}
+}

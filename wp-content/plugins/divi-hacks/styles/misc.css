@@ -1,0 +1,241 @@
+/*************************************************************************/
+/***************  Open Link to New Window Icon  **********/
+/*************************************************************************/
+
+a.ab-item[target="_blank"]:after {
+    content: '\f504';
+    position: relative;
+    left: 10px;
+    font-family: 'dashicons';
+    font-size: inherit !important;
+}
+
+/*************************************************************************/
+/***************  Stacked Login Form  **********/
+/*************************************************************************/
+
+.stack.et_pb_login .et_pb_newsletter_form {
+    width: 100% !important;
+    padding-left: 0px !important;
+}
+.stack.et_pb_login .et_pb_newsletter_description {
+    width: 100% !important;
+}
+p.et_pb_forgot_password {
+    text-align: var(--forgot-pass-align);
+}
+
+/*************************************************************************/
+/***************  Custom SVG  **********/
+/*************************************************************************/
+
+.et-fb .custom-svg.et_pb_hovered {
+    z-index:1 !important;
+}
+.dh-custom-svg {
+    height: 100%;
+    width: 100%;
+    line-height:0px;
+}
+/*************************************************************************/
+/***************  Show Admin Bar in Theme Builder  **********/
+/*************************************************************************/
+
+.divi_page_et_theme_builder div#wpadminbar {
+    z-index: 99999999;
+    top:-20px;
+    opacity:0;
+    transition:all 0.2s ease-in-out;
+}
+.divi_page_et_theme_builder div#wpadminbar:hover {
+    z-index: 99999999;
+    top:0px;
+    opacity:1;
+    transition:all 0.2s ease-in-out;
+}
+
+/*************************************************************************/
+/***************  Dim Visual Builder Controls  **********/
+/*************************************************************************/
+
+.divi-hacks-dim-controls .et-fb-page-settings-bar.et-fb-page-settings-bar--active {
+    opacity:0.1;
+    -webkit-transition:0.2s all ease-in-out;
+    -moz-transition:0.2s all ease-in-out;
+    -ms-transition:0.2s all ease-in-out;
+    -o-transition:0.2s all ease-in-out;
+    transition:0.2s all ease-in-out;
+    padding:0px;
+}
+.divi-hacks-dim-controls .et-fb-page-settings-bar.et-fb-page-settings-bar--active:hover {
+    opacity:1;
+    -webkit-transition:0.2s all ease-in-out;
+    -moz-transition:0.2s all ease-in-out;
+    -ms-transition:0.2s all ease-in-out;
+    -o-transition:0.2s all ease-in-out;
+    transition:0.2s all ease-in-out;
+}
+
+/*************************************************************************/
+/***************  Always Show Hover & Responsive Style Buttons  **********/
+/*************************************************************************/
+
+.divi-hacks-show-hovres-buttons.et-db #et-boc .et-fb-form__help, 
+.divi-hacks-show-hovres-buttons.et-db #et-boc .et-fb-form__hover, 
+.divi-hacks-show-hovres-buttons.et-db #et-boc .et-fb-form__reset, 
+.divi-hacks-show-hovres-buttons.et-db #et-boc .et-fb-form__menu, 
+.divi-hacks-show-hovres-buttons.et-db #et-boc .et-fb-form__responsive {
+    margin-left: 7px !important;
+    opacity: 1 !important;
+}
+
+/*************************************************/
+/***************  Miscellaneous Styles  **********/
+/*************************************************/
+
+.et_pb_root--vb li.menu-item[class*="lightbox-content"] {
+    display: none;
+}
+.closeable {
+    position:relative;
+}
+pre {
+    white-space: inherit;
+}
+body {
+  overflow-x:hidden !important;
+}
+
+/*************************************************/
+/*  Compatibility with Divi Bars & Divi Overlays */
+/*************************************************/
+
+.divibar-open #main-header .et_menu_container {
+    z-index: 1 !important;
+}
+#main-header > .container {
+    z-index: 99 !important;
+}
+
+/*************************************************/
+/*** Add word spacing in the CSS Classes box to see the different classes easier. ***/
+/*************************************************/
+
+.divi-hacks-class-space input#et-fb-module_class {
+    word-spacing: 12px;
+}
+
+/*************************************************/
+/******** Pretty Sidebar Shadow ***********/
+/*************************************************/
+
+@media only screen and (min-width:981px) {
+  .divi-hacks-sidebar-shadow.et_right_sidebar #sidebar {
+      box-shadow: -100px 50px 80px -80px rgba(0,0,0,0.1);
+  }
+  .divi-hacks-sidebar-shadow.et_left_sidebar #sidebar {
+      box-shadow: 100px 50px 80px -80px rgba(0,0,0,0.1);
+  }
+  .divi-hacks-sidebar-shadow #main-content .container:before {
+      display: none;
+  }
+}
+
+/*************************************************/
+/****** Hide content based on Role and logged-in/out status *******/
+/*************************************************/
+
+body.divi-hacks-hide-show.subscriber:not(.et-fb) .hide-if-subscriber,
+body.divi-hacks-hide-show.contributor:not(.et-fb) .hide-if-contributor,
+body.divi-hacks-hide-show.author:not(.et-fb) .hide-if-author,
+body.divi-hacks-hide-show.editor:not(.et-fb) .hide-if-editor,
+body.divi-hacks-hide-show.administrator:not(.et-fb) .hide-if-admin,
+body.divi-hacks-hide-show.customer:not(.et-fb) .hide-if-customer,
+body.divi-hacks-hide-show.shop_manager:not(.et-fb) .hide-if-shop-manager,
+body.divi-hacks-hide-show.logged-in:not(.et-fb) .hide-if-login, 
+body.divi-hacks-hide-show.logged-out .hide-if-logout {
+  display:none !important;
+}
+
+/*************************************************************/
+/****** Fix for BG scroll on mobile device while editing in Visual Builder *******/
+/*************************************************************/
+
+.et-fb-preview--phone .et-fb .et_parallax_bg, .et-fb-preview--tablet .et-fb .et_parallax_bg {
+    background-attachment: scroll !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+}
+
+/*************************************************************/
+/****** Fix for overlapping section on footer with section class .full-height *******/
+/*************************************************************/
+
+.divi-hacks-full-height #main-footer {
+    z-index: 9999;
+    position: relative;
+    margin-top: 0 !important;
+}
+.divi-hacks-full-height.et-fb #main-footer {
+    margin-top:0;
+}
+
+/*************************************************************/
+/****** New Instagram Gradient *******/
+/*************************************************************/
+
+.divi-hacks-insta-gradient .et_pb_social_media_follow.insta-gradient .et-social-instagram a.icon::after {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    border-radius: inherit;
+}
+
+/*************************************************************/
+/****** Reverse column view on mobile  *******/
+/*************************************************************/
+
+.divi-hacks-mobile-reverse.is-mobile .mobile-reverse,
+html.et-fb-preview--tablet .divi-hacks-mobile-reverse .mobile-reverse,
+html.et-fb-preview--phone .divi-hacks-mobile-reverse .mobile-reverse {
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+/*************************************************************/
+/****** Replace RSS icon in footer with Instagram icon *******/
+/*************************************************************/
+
+.divi-hacks-rss-insta .et-social-rss a.icon:before {
+    content: "\e09a" !important;
+}
+
+/*************************************************************/
+/****** Custom hover styles *******/
+/*************************************************************/
+
+.divi-hacks-hover .hover-grow {
+  transform:scale(1);
+  transition:transform 0.3s ease-in-out;
+}
+.divi-hacks-hover .hover-grow:hover {
+  transform:scale(1.05);
+}
+
+/*************************************************************/
+/****** Custom styles *******/
+/*************************************************************/
+
+[class*="keep-hidden-"] {
+	display:none;
+	visibility:hidden;
+}

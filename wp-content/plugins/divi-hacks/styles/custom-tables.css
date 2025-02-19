@@ -1,0 +1,451 @@
+
+/***********************************/
+/***  Responsive Custom Tables   ***/
+/**** Author: Jerry Low          ***/
+/***********************************/
+
+.divi-hacks-custom-tables .custom-table table.bt thead,
+.divi-hacks-custom-tables .custom-table table.bt tbody tr:first-child {
+  display: none;
+}
+.divi-hacks-custom-tables .custom-table table.bt tfoot th,
+.divi-hacks-custom-tables .custom-table table.bt tfoot td,
+.divi-hacks-custom-tables .custom-table table.bt tbody td,
+.divi-hacks-custom-tables .custom-table table.bt tr {
+  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  /* IE 9 */
+  float: left\9;
+  width: 100%\9;
+}
+.divi-hacks-custom-tables .custom-table table.bt {
+  display:flex;
+}
+.divi-hacks-custom-tables .custom-table table.bt tbody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.divi-hacks-custom-tables .custom-table table.bt tr {
+  flex-direction:column;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+}
+.divi-hacks-custom-tables .custom-table table.bt tfoot th::before,
+.divi-hacks-custom-tables .custom-table table.bt tfoot td::before,
+.divi-hacks-custom-tables .custom-table table.bt tbody td::before {
+  content: attr(data-th);
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.divi-hacks-custom-tables .custom-table table.bt tfoot th.bt-hide,
+.divi-hacks-custom-tables .custom-table table.bt tfoot td.bt-hide,
+.divi-hacks-custom-tables .custom-table table.bt tbody td.bt-hide {
+  display: none;
+}
+
+.divi-hacks-custom-tables .custom-table table.bt tfoot th .bt-content,
+.divi-hacks-custom-tables .custom-table table.bt tfoot td .bt-content,
+.divi-hacks-custom-tables .custom-table table.bt tbody td .bt-content {
+  vertical-align: top;
+}
+
+.bt-wrapper.active {
+  max-height: 310px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.divi-hacks-custom-tables .custom-table table.bt.bt--no-header tfoot td::before,
+.divi-hacks-custom-tables .custom-table table.bt.bt--no-header tbody td::before,
+.is-mobile.divi-hacks-custom-tables .custom-table:not(.no-stacking) table.has-header thead,
+.is-mobile.divi-hacks-custom-tables .custom-table:not(.no-stacking) table:not(.has-header) tbody tr:first-child,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table:not(.no-stacking) table.has-header thead,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table:not(.no-stacking) table:not(.has-header) tbody tr:first-child {
+  display: none !important;
+}
+
+/***  Global Custom Tables Styles   ***/
+
+.divi-hacks-custom-tables .custom-table td * {
+    padding-bottom: 0;
+    z-index:1;
+    position:relative;
+}
+.is-desktop.divi-hacks-custom-tables:not(.et-fb) .custom-table td,
+html.et-fb-preview--desktop .divi-hacks-custom-tables .custom-table td {
+    position:relative;
+}
+.is-desktop.divi-hacks-custom-tables:not(.et-fb) .custom-table td:hover:after,
+html.et-fb-preview--desktop .divi-hacks-custom-tables .custom-table td:hover:after { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: 0;
+}
+.is-desktop.divi-hacks-custom-tables:not(.et-fb) .custom-table td:hover:before, 
+html.et-fb-preview--desktop .divi-hacks-custom-tables .custom-table td:hover:before {
+    content: '';
+    width: 10000px;
+    left: -5000px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/***  Custom Tables Global Variables   ***/
+
+.divi-hacks-custom-tables .custom-table table {
+  overflow:hidden !important;
+  border: var(--table-border) !important;
+  border-top: var(--table-border-top) !important;
+  border-right: var(--table-border-right) !important;
+  border-bottom: var(--table-border-bottom) !important;
+  border-left: var(--table-border-left) !important;
+  padding: var(--table-padding, 0) !important;
+  margin: var(--table-margin, 0) !important;
+  background: var(--table-background, #fff);
+}
+.divi-hacks-custom-tables .custom-table tr {
+  border: var(--table-row-border) !important;
+  border-top: var(--table-row-border-top) !important;
+  border-right: var(--table-row-border-right) !important;
+  border-bottom: var(--table-row-border-bottom) !important;
+  border-left: var(--table-row-border-left) !important;
+  padding: var(--table-row-padding, 0) !important;
+  margin: var(--table-row-margin, 0) !important;
+  background: var(--table-row-background);
+}
+.divi-hacks-custom-tables .custom-table td {
+  border: var(--table-data-border) !important;
+  border-top: var(--table-data-border-top) !important;
+  border-right: var(--table-data-border-right) !important;
+  border-bottom: var(--table-data-border-bottom) !important;
+  border-left: var(--table-data-border-left) !important;
+  margin: var(--table-data-margin, 0) !important;
+  background: var(--table-data-background);
+  padding:0 !important;
+}
+.divi-hacks-custom-tables .custom-table table:not(.has-header) tbody tr:first-child,
+.divi-hacks-custom-tables .custom-table table.has-header thead tr {
+  border: var(--table-row-header-border) !important;
+  border-top: var(--table-row-header-border-top) !important;
+  border-right: var(--table-row-header-border-right) !important;
+  border-bottom: var(--table-row-header-border-bottom) !important;
+  border-left: var(--table-row-header-border-left) !important;
+  background: var(--table-row-header-background);
+}
+.divi-hacks-custom-tables .custom-table td {
+    vertical-align: var(--table-data-vertical-align, middle) !important;
+}
+.divi-hacks-custom-tables .custom-table td .td-inner, .divi-hacks-custom-tables .custom-table td .bt-content {
+  padding: var(--table-data-padding, 6px 24px) !important;
+  display:flex;
+}
+.divi-hacks-custom-tables .custom-table table:not(.has-header) tbody tr:nth-child(odd):not(:first-child),
+.divi-hacks-custom-tables .custom-table table.has-header tbody tr:nth-child(odd) {
+  background: var(--table-row-odd-background, var(--table-data-background, rgba(0,0,0,0.03)));
+}
+.divi-hacks-custom-tables .custom-table table:not(.has-header) tbody tr:nth-child(even),
+.divi-hacks-custom-tables .custom-table table.has-header tr:nth-child(even) {
+  background: var(--table-row-even-background, var(--table-data-background));
+}
+.divi-hacks-custom-tables .custom-table table:not(.has-header) tbody tr:nth-child(odd) td,
+.divi-hacks-custom-tables .custom-table table.has-header tbody tr:nth-child(odd) td {
+  color: var(--table-row-odd-color) !important;
+}
+.divi-hacks-custom-tables .custom-table table:not(.has-header) tbody tr:nth-child(even) td,
+.divi-hacks-custom-tables .custom-table table.has-header tbody tr:nth-child(even) td {
+  color: var(--table-row-even-color) !important;
+}
+.is-desktop.divi-hacks-custom-tables:not(.et-fb) .custom-table td:hover:after,
+html.et-fb-preview--desktop .divi-hacks-custom-tables .custom-table td:hover:after { 
+  background: var(--table-column-hover-background, inherit) !important;
+}
+.is-desktop.divi-hacks-custom-tables:not(.et-fb) .custom-table tr:not(:first-child) td:hover:before,
+html.et-fb-preview--desktop .divi-hacks-custom-tables .custom-table tr:not(:first-child) td:hover:before {
+  background: var(--table-row-hover-background, inherit) !important;
+}
+
+.divi-hacks-custom-tables .custom-table.no-stacking td {
+    padding: var(--table-data-padding, 5px 15px) !important;
+}
+
+/***  Custom Tables Mobile Variables   ***/
+
+.is-mobile.divi-hacks-custom-tables .custom-table table,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table table {
+  overflow:hidden !important;
+  border: var(--mob-table-border) !important;
+  border-top: var(--mob-table-border-top) !important;
+  border-right: var(--mob-table-border-right) !important;
+  border-bottom: var(--mob-table-border-bottom) !important;
+  border-left: var(--mob-table-border-left) !important;
+  padding: var(--mob-table-padding, 0) !important;
+  margin: var(--mob-table-margin, 0) !important;
+  background: var(--mob-table-background, var(--table-background, #fff));
+}
+.is-mobile.divi-hacks-custom-tables .custom-table tr,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table tr {
+  border: var(--mob-table-row-border) !important;
+  border-top: var(--mob-table-row-border-top) !important;
+  border-right: var(--mob-table-row-border-right) !important;
+  border-bottom: var(--mob-table-row-border-bottom) !important;
+  border-left: var(--mob-table-row-border-left) !important;
+  padding: var(--mob-table-row-padding, 20px 0) !important;
+  margin: var(--mob-table-row-margin, 0) !important;
+  background: var(--mob-table-row-background, var(--table-row-background));
+}
+.is-mobile.divi-hacks-custom-tables .custom-table td,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table td {
+  border: var(--mob-table-data-border) !important;
+  border-top: var(--mob-table-data-border-top) !important;
+  border-right: var(--mob-table-data-border-right) !important;
+  border-bottom: var(--mob-table-data-border-bottom) !important;
+  border-left: var(--mob-table-data-border-left) !important;
+  padding: var(--mob-table-data-padding, 0) !important;
+  margin: var(--mob-table-data-margin, 0) !important;
+  background: var(--mob-table-data-background, var(--table-data-background));
+}
+.is-mobile.divi-hacks-custom-tables .custom-table:not(.horizontal-gradient-row):not(.vertical-gradient-row) tr:nth-child(odd),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table:not(.horizontal-gradient-row):not(.vertical-gradient-row) tr:nth-child(odd) {
+  background: var(--mob-table-row-odd-background, var(--table-row-odd-background));
+}
+.is-mobile.divi-hacks-custom-tables .custom-table:not(.horizontal-gradient-row):not(.vertical-gradient-row) tr:nth-child(even),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table:not(.horizontal-gradient-row):not(.vertical-gradient-row) tr:nth-child(even) {
+  background: var(--mob-table-row-even-background, var(--table-row-even-background));
+}
+.is-mobile.divi-hacks-custom-tables .custom-table tr:nth-child(odd) td,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table tr:nth-child(odd) td {
+  color: var(--mob-table-row-odd-color, var(--table-row-odd-color)) !important;
+}
+.is-mobile.divi-hacks-custom-tables .custom-table tr:nth-child(even) td,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table tr:nth-child(even) td {
+  color: var(--mob-table-row-even-color, var(--table-row-even-color)) !important;
+}
+.is-mobile.divi-hacks-custom-tables .custom-table td:before,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table td:before {
+  min-width: var(--mob-label-min-width, 100px) !important;
+  width: var(--mob-label-width, 50%) !important;
+  max-width: var(--mob-label-max-width, unset ) !important;
+  color: var(--mob-label-color, #000) !important;
+  text-align: var(--mob-label-text-align, right) !important;
+  font-weight: var(--mob-label-font-weight, bold) !important;
+  font-family: var(--mob-label-font-family, inherit) !important;
+}
+
+/***** Table Gradients ******/
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-data table:not(.has-header), 
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-data table.has-header {
+  background: -ms-linear-gradient(left, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+  background: -moz-linear-gradient(left, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+  background: -o-linear-gradient(left, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--table-gradient-start-color, var(--table-background, #fff))), color-stop(100%, var(--table-gradient-end-color, var(--table-background, #fff))));
+  background: -webkit-linear-gradient(left, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+  background: linear-gradient(to right, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+
+}
+.divi-hacks-custom-tables .custom-table.vertical-gradient-data table:not(.has-header), 
+.divi-hacks-custom-tables .custom-table.vertical-gradient-data table.has-header {
+  background: -ms-linear-gradient(top, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+  background: -moz-linear-gradient(top, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+  background: -o-linear-gradient(top, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--table-gradient-start-color, var(--table-background, #fff))), color-stop(100%, var(--table-gradient-end-color, var(--table-background, #fff))));
+  background: -webkit-linear-gradient(top, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+  background: linear-gradient(to bottom, var(--table-gradient-start-color, var(--table-background, #fff)) 0%, var(--table-gradient-end-color, var(--table-background, #fff)) 100%);
+}
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-data table:not(.has-header) tbody tr, 
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-data table.has-header tbody tr {
+  background: -ms-linear-gradient(left, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+  background: -moz-linear-gradient(left, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+  background: -o-linear-gradient(left, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--table-row-gradient-start-color, var(--table-row-background))), color-stop(100%, var(--table-row-gradient-end-color, var(--table-row-background))));
+  background: -webkit-linear-gradient(left, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+  background: linear-gradient(to right, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+}
+.divi-hacks-custom-tables .custom-table.vertical-gradient-data table:not(.has-header) tbody tr, 
+.divi-hacks-custom-tables .custom-table.vertical-gradient-data table.has-header tbody tr {
+  background: -ms-linear-gradient(top, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+  background: -moz-linear-gradient(top, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+  background: -o-linear-gradient(top, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--table-row-gradient-start-color, var(--table-row-background))), color-stop(100%, var(--table-row-gradient-end-color, var(--table-row-background))));
+  background: -webkit-linear-gradient(top, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+  background: linear-gradient(to bottom, var(--table-row-gradient-start-color, var(--table-row-background)) 0%, var(--table-row-gradient-end-color, var(--table-row-background)) 100%);
+}
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-data table:not(.has-header) tbody td, 
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-data table.has-header tbody td {
+  background: -ms-linear-gradient(left, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+  background: -moz-linear-gradient(left, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+  background: -o-linear-gradient(left, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--table-data-gradient-start-color, var(--table-data-background))), color-stop(100%, var(--table-data-gradient-end-color, var(--table-data-background))));
+  background: -webkit-linear-gradient(left, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+  background: linear-gradient(to right, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+}
+.divi-hacks-custom-tables .custom-table.vertical-gradient-data table:not(.has-header) tbody td, 
+.divi-hacks-custom-tables .custom-table.vertical-gradient-data table.has-header tbody td {
+  background: -ms-linear-gradient(top, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+  background: -moz-linear-gradient(top, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+  background: -o-linear-gradient(top, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--table-data-gradient-start-color, var(--table-data-background))), color-stop(100%, var(--table-data-gradient-end-color, var(--table-data-background))));
+  background: -webkit-linear-gradient(top, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+  background: linear-gradient(to bottom, var(--table-data-gradient-start-color, var(--table-data-background)) 0%, var(--table-data-gradient-end-color, var(--table-data-background)) 100%);
+}
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-row table:not(.has-header) tbody tr:nth-child(odd):not(:first-child),
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-row table.has-header tbody tr:nth-child(odd) {
+  background: -moz-linear-gradient(left, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -o-linear-gradient(left, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -ms-linear-gradient(left, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -webkit-linear-gradient(left, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03)))))), color-stop(100%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03)))))));
+  background: linear-gradient(to right, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+}
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-row table:not(.has-header) tbody tr:nth-child(even),
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-row table.has-header tbody tr:nth-child(even) {
+  background: -moz-linear-gradient(left, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -o-linear-gradient(left, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -ms-linear-gradient(left, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -webkit-linear-gradient(left, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0)))))), color-stop(100%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0)))))));
+  background: linear-gradient(to right, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+}
+.divi-hacks-custom-tables .custom-table.vertical-gradient-row table:not(.has-header) tbody tr:nth-child(odd):not(:first-child),
+.divi-hacks-custom-tables .custom-table.vertical-gradient-row table.has-header tbody tr:nth-child(odd) {
+  background: -moz-linear-gradient(top, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -o-linear-gradient(top, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -ms-linear-gradient(top, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -webkit-linear-gradient(top, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03)))))), color-stop(100%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03)))))));
+  background: linear-gradient(to bottom, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+}
+.divi-hacks-custom-tables .custom-table.vertical-gradient-row table:not(.has-header) tbody tr:nth-child(even),
+.divi-hacks-custom-tables .custom-table.vertical-gradient-row table.has-header tbody tr:nth-child(even) {
+  background: -moz-linear-gradient(top, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -o-linear-gradient(top, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -ms-linear-gradient(top, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -webkit-linear-gradient(top, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0)))))), color-stop(100%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0)))))));
+  background: linear-gradient(to bottom, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+}
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-header table:not(.has-header) tr:first-child, 
+.divi-hacks-custom-tables .custom-table.horizontal-gradient-header table.has-header thead tr {
+  background: -moz-linear-gradient(left, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+  background: -o-linear-gradient(left, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+  background: -ms-linear-gradient(left, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+  background: -webkit-linear-gradient(left, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background)))), color-stop(100%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background)))));
+  background: linear-gradient(to right, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+}
+.divi-hacks-custom-tables .custom-table.vertical-gradient-header table:not(.has-header) tr:first-child, 
+.divi-hacks-custom-tables .custom-table.vertical-gradient-header table.has-header thead tr {
+  background: -moz-linear-gradient(top, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+  background: -o-linear-gradient(top, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+  background: -ms-linear-gradient(top, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+  background: -webkit-linear-gradient(top, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background)))), color-stop(100%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background)))));
+  background: linear-gradient(to bottom, var(--table-header-gradient-start-color, var(--table-header-background, var(--table-row-background))) 0%, var(--table-header-gradient-end-color, var(--table-header-background, var(--table-row-background))) 100%);
+}
+
+
+.is-mobile.divi-hacks-custom-tables .custom-table.horizontal-gradient table.has-header,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.horizontal-gradient table.has-header,
+.is-mobile.divi-hacks-custom-tables .custom-table.horizontal-gradient table:not(.has-header),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.horizontal-gradient table:not(.has-header) {
+  background: -moz-linear-gradient(left, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+  background: -o-linear-gradient(left, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+  background: -ms-linear-gradient(left, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+  background: -webkit-linear-gradient(left, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff)))), color-stop(100%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff)))));
+  background: linear-gradient(to right, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+}
+.is-mobile.divi-hacks-custom-tables .custom-table.vertical-gradient table.has-header,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.vertical-gradient table.has-header,
+.is-mobile.divi-hacks-custom-tables .custom-table.vertical-gradient table:not(.has-header),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.vertical-gradient table:not(.has-header) {
+  background: -moz-linear-gradient(top, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+  background: -o-linear-gradient(top, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+  background: -ms-linear-gradient(top, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+  background: -webkit-linear-gradient(top, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff)))), color-stop(100%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff)))));
+  background: linear-gradient(to bottom, var(--mob-table-gradient-start-color, var(--table-gradient-start-color, var(--table-background, #fff))) 0%, var(--mob-table-gradient-end-color, var(--table-gradient-end-color, var(--table-background, #fff))) 100%);
+}
+.is-mobile.divi-hacks-custom-tables .custom-table.horizontal-gradient-data table.has-header tr,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.horizontal-gradient-data table.has-header tr,
+.is-mobile.divi-hacks-custom-tables .custom-table.horizontal-gradient-data table:not(.has-header) tr,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.horizontal-gradient-data table:not(.has-header) tr {
+  background: -moz-linear-gradient(left, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+  background: -o-linear-gradient(left, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+  background: -ms-linear-gradient(left, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+  background: -webkit-linear-gradient(left, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background)))), color-stop(100%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background)))));
+  background: linear-gradient(to right, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+}
+.is-mobile.divi-hacks-custom-tables .custom-table.vertical-gradient-data table.has-header tr,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.vertical-gradient-data table.has-header tr,
+.is-mobile.divi-hacks-custom-tables .custom-table.vertical-gradient-data table:not(.has-header) tr,
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.vertical-gradient-data table:not(.has-header) tr {
+  background: -moz-linear-gradient(top, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+  background: -o-linear-gradient(top, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+  background: -ms-linear-gradient(top, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+  background: -webkit-linear-gradient(top, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background)))), color-stop(100%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background)))));
+  background: linear-gradient(to bottom, var(--mob-table-row-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-background))) 0%, var(--mob-table-row-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-background))) 100%);
+}
+.is-mobile.divi-hacks-custom-tables .custom-table.horizontal-gradient-row table:not(.has-header) tbody tr:nth-child(odd):not(:first-child),
+.is-mobile.divi-hacks-custom-tables .custom-table.horizontal-gradient-row table.has-header tbody tr:nth-child(odd),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.horizontal-gradient-row table:not(.has-header) tbody tr:nth-child(odd):not(:first-child),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.horizontal-gradient-row table.has-header tbody tr:nth-child(odd) {
+  background: -moz-linear-gradient(left, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -o-linear-gradient(left, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -ms-linear-gradient(left, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -webkit-linear-gradient(left, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03)))))), color-stop(100%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03)))))));
+  background: linear-gradient(to right, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+}
+.is-mobile.divi-hacks-custom-tables .custom-table.horizontal-gradient-row table.has-header tbody tr:nth-child(even),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.horizontal-gradient-row table.has-header tbody tr:nth-child(even),
+.is-mobile.divi-hacks-custom-tables .custom-table.horizontal-gradient-row table:not(.has-header) tbody tr:nth-child(even),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.horizontal-gradient-row table:not(.has-header) tbody tr:nth-child(even) {
+  background: -moz-linear-gradient(left, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -o-linear-gradient(left, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -ms-linear-gradient(left, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -webkit-linear-gradient(left, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0)))))), color-stop(100%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0)))))));
+  background: linear-gradient(to right, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+}
+.is-mobile.divi-hacks-custom-tables .custom-table.vertical-gradient-row table:not(.has-header) tbody tr:nth-child(odd):not(:first-child),
+.is-mobile.divi-hacks-custom-tables .custom-table.vertical-gradient-row table.has-header tbody tr:nth-child(odd),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.vertical-gradient-row table:not(.has-header) tbody tr:nth-child(odd):not(:first-child),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.vertical-gradient-row table.has-header tbody tr:nth-child(odd) {
+  background: -moz-linear-gradient(top, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -o-linear-gradient(top, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -ms-linear-gradient(top, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -webkit-linear-gradient(top, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03)))))), color-stop(100%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03)))))));
+  background: linear-gradient(to bottom, var(--table-row-odd-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 0%, var(--table-row-odd-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+}
+.is-mobile.divi-hacks-custom-tables .custom-table.vertical-gradient-row table.has-header tbody tr:nth-child(even),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.vertical-gradient-row table.has-header tbody tr:nth-child(even),
+.is-mobile.divi-hacks-custom-tables .custom-table.vertical-gradient-row table:not(.has-header) tbody tr:nth-child(even),
+html.et_fb_preview_active .divi-hacks-custom-tables .custom-table.vertical-gradient-row table:not(.has-header) tbody tr:nth-child(even) {
+  background: -moz-linear-gradient(top, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -o-linear-gradient(top, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -ms-linear-gradient(top, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+  background: -webkit-linear-gradient(top, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03))))) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0)))))), color-stop(100%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-odd-background, var(--table-row-background, rgba(0,0,0,0.03)))))));
+  background: linear-gradient(to bottom, var(--table-row-even-gradient-start-color, var(--table-row-gradient-start-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 0%, var(--table-row-even-gradient-end-color, var(--table-row-gradient-end-color, var(--table-row-even-background, var(--table-row-background, rgba(0,0,0,0.0))))) 100%);
+}
+

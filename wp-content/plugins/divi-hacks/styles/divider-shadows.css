@@ -1,0 +1,85 @@
+
+/*************************************************/
+/************ Section Divider Shadows ************/
+/*************************************************/
+
+.divi-hacks-divider-shadows .et_pb_top_inside_divider {
+    -webkit-filter: drop-shadow(var(--top-divider-shadow));
+    filter: drop-shadow(var(--top-divider-shadow));
+}
+.divi-hacks-divider-shadows .et_pb_bottom_inside_divider {
+    -webkit-filter: drop-shadow(var(--bottom-divider-shadow));
+    filter: drop-shadow(var(--bottom-divider-shadow));
+}
+.divi-hacks-divider-shadows .top-divider-shadow-10 .et_pb_top_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=20, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 20px 10px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 20px 10px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .bottom-divider-shadow-10 .et_pb_bottom_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=-20, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 -20px 10px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 -20px 10px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .top-divider-shadow-5 .et_pb_top_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=10, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 10px 5px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .bottom-divider-shadow-5 .et_pb_bottom_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=-10, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 -10px 5px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 -10px 5px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .top-divider-shadow-3 .et_pb_top_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=6, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 6px 3px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 6px 3px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .bottom-divider-shadow-3 .et_pb_bottom_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=-6, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 -6px 3px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 -6px 3px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .top-divider-shadow-10-flip .et_pb_top_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=20, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 -20px 10px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 -20px 10px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .bottom-divider-shadow-10-flip .et_pb_bottom_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=-20, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 20px 10px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 20px 10px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .top-divider-shadow-5-flip .et_pb_top_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=10, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 -10px 5px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 -10px 5px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .bottom-divider-shadow-5-flip .et_pb_bottom_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=-10, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 10px 5px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .top-divider-shadow-3-flip .et_pb_top_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=6, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 -6px 3px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 -6px 3px rgba(0,0,0,0.05));
+}
+.divi-hacks-divider-shadows .bottom-divider-shadow-3-flip .et_pb_bottom_inside_divider {
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=-6, Color='#444')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0 6px 3px rgba(0,0,0,0.05));
+    filter: drop-shadow(0 6px 3px rgba(0,0,0,0.05));
+}

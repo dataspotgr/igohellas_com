@@ -1,0 +1,50 @@
+
+/*************************************************************/
+/****** Post-it shadow on Blog Grid Posts *******/
+/*************************************************************/
+
+.divi-hacks-blog-style .et_pb_blog_grid .et_pb_post::before, .divi-hacks-blog-style .filterable-blogposts .et_pb_post::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    bottom: -30px;
+    left: 0;
+    z-index: -1;
+    opacity: 0.15;
+    filter: blur(3px);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' preserveAspectRatio='none' width='100%' height='64' fill='%23000000'%3E%3Cpath d='M0 64 C15 30 40 20 64 64 L62 0 L2 0 Z' /%3E%3C/svg%3E");
+    background-position:top -15px center !important;
+    background-repeat:no-repeat !important;
+    background-size:100% 100%;
+}
+.divi-hacks-blog-style .et_pb_blog_grid .et_pb_post::after, .divi-hacks-blog-style .filterable-blogposts .et_pb_post::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 1;
+    visibility: visible;
+    background: inherit;
+
+}
+.divi-hacks-blog-style .et_pb_blog_grid .et_pb_post, .divi-hacks-blog-style .filterable-blogposts .et_pb_post {
+    position: relative;
+    transition: all ease-out 0.5s;
+}
+.divi-hacks-blog-style .et_pb_blog_grid .et_pb_post:hover, .divi-hacks-blog-style .filterable-blogposts .et_pb_post:hover {
+    transform: scale(1.01);
+}
+.divi-hacks-blog-style .et_pb_blog_grid .et_pb_post:hover::before, .divi-hacks-blog-style .filterable-blogposts .et_pb_post:hover::before {
+    bottom:-30px;
+    height:30px;
+    background-position:top -10px center !important;
+
+}

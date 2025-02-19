@@ -1,0 +1,28 @@
+/*************************************************************************/
+/***************  Show the Admin Bar in the Theme Builder  **********/
+/*************************************************************************/
+
+.et-tb.et-db div#wpadminbar {
+    z-index: 99999999;
+    top:-20px;
+    opacity:0;
+    transition:all 0.2s ease-in-out;
+}
+.et-tb.et-db div#wpadminbar:hover {
+    z-index: 99999999;
+    top:0px;
+    opacity:1;
+    transition:all 0.2s ease-in-out;
+}
+.et-tb.et-db div#adminmenuwrap {
+    z-index: 9999999;
+    transform: translateX(calc(-100% + 7px));
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.et-tb.et-db div#adminmenuwrap:hover {
+    z-index: 9999999;
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}

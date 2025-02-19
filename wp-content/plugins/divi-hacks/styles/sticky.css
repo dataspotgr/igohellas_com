@@ -1,0 +1,72 @@
+
+/*************************************************/
+/**************** Sticky Element ****************/
+/*************************************************/
+
+.sticky-element, .sticky-module, .sticky-row {
+    margin-bottom: 0 !important;
+}
+.sticky-section {
+  z-index:101;
+}
+.sticky-column {
+  z-index:100 !important;
+}
+.sticky-row.is_stuck, .sticky-row.is_stuck.center {
+    align-self: center;
+}
+.sticky-row.is_stuck.left {
+    align-self: flex-start;
+}
+.sticky-row.is_stuck.right {
+    align-self: flex-end;
+}
+.et_pb_section.has-sticky-row,
+.et_pb_row.has-sticky-column {
+    display: flex;
+    flex-direction: column;
+}
+.custom-tabs.sticky-element.is_stuck {
+    display: flex !important;
+}
+
+.et-fb .sticky-element {
+    z-index: 9999999 !important;
+}
+.is-sticky > .sticky-header,
+.is-sticky > .sticky-element {
+	-webkit-animation: slide-down 0.2s linear;
+	-moz-animation: slide-down 0.2s linear;
+	-ms-animation: slide-down 0.2s linear;
+	-o-animation: slide-down 0.2s linear;
+    animation: slide-down 0.2s linear;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-30%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.sticky-header,
+.sticky-element {
+  -webkit-animation: slide-back-down 0.5s linear;
+  -moz-animation: slide-back-down 0.5s linear;
+  -ms-animation: slide-back-down 0.5s linear;
+  -o-animation: slide-back-down 0.5s linear;
+    animation: slide-back-down 0.5s linear;
+}
+
+@keyframes slide-back-down {
+  from {
+    transform: translateY(-30%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}

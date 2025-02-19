@@ -1,0 +1,189 @@
+
+/*************************************************/
+/************* Custom Tab Alignment *************/
+/*************************************************/
+
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-top,
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom,
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-left ul.et_pb_tabs_controls li ul,
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-right ul.et_pb_tabs_controls{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-left,
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-right,
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-top ul.et_pb_tabs_controls,
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom ul.et_pb_tabs_controls {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.custom-tabs .et_pb_tabs_controls .et_pb_tabs_controls li {
+    height: unset !important;
+}
+.divi-hacks-custom-tabs .custom-tabs:not(.tabs-on-left):not(.align-justify) ul.et_pb_tabs_controls {
+  height:fit-content;
+  height:-moz-fit-content;
+}
+.divi-hacks-custom-tabs .custom-tabs:not(.tabs-on-right):not(.align-justify) ul.et_pb_tabs_controls {
+  height:fit-content;
+  height:-moz-fit-content;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom {
+  flex-direction:column-reverse;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-left li, 
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-right li {
+    width: 100%;
+}
+.divi-hacks-custom-tabs.is-tablet .custom-tabs.tabs-on-left,
+.divi-hacks-custom-tabs.is-desktop .custom-tabs.tabs-on-left,
+html.et-fb-preview--tablet .divi-hacks-custom-tabs .custom-tabs.tabs-on-left,
+html.et-fb-preview--desktop .divi-hacks-custom-tabs .custom-tabs.tabs-on-left {
+  flex-direction:row;
+}
+.divi-hacks-custom-tabs.is-tablet .custom-tabs.tabs-on-right,
+.divi-hacks-custom-tabs.is-desktop .custom-tabs.tabs-on-right,
+html.et-fb-preview--tablet .divi-hacks-custom-tabs .custom-tabs.tabs-on-right,
+html.et-fb-preview--desktop .divi-hacks-custom-tabs .custom-tabs.tabs-on-right {
+  flex-direction:row-reverse;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-top,
+.divi-hacks-custom-tabs.is-phone .custom-tabs.tabs-on-left,
+.divi-hacks-custom-tabs.is-phone .custom-tabs.tabs-on-right,
+html.et-fb-preview--phone .custom-tabs.tabs-on-left,
+html.et-fb-preview--phone .custom-tabs.tabs-on-right {
+  flex-direction:column;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-top ul.et_pb_tabs_controls,
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom ul.et_pb_tabs_controls {
+  flex-direction:row;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-left:not(.align-justify) ul.et_pb_tabs_controls,
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-right:not(.align-justify) ul.et_pb_tabs_controls,
+.divi-hacks-custom-tabs.is-phone .custom-tabs.tabs-on-top ul.et_pb_tabs_controls,
+.divi-hacks-custom-tabs.is-phone .custom-tabs.tabs-on-bottom ul.et_pb_tabs_controls,
+html.et-fb-preview--phone .custom-tabs.tabs-on-top ul.et_pb_tabs_controls,
+html.et-fb-preview--phone .custom-tabs.tabs-on-bottom ul.et_pb_tabs_controls {
+  flex-direction:column;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-top.align-left:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls {
+  justify-content: flex-start;
+  flex-wrap:wrap-reverse;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom.align-left:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls {
+  justify-content: flex-start;
+  flex-wrap:wrap;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-top.align-right:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls {
+  justify-content: flex-end;
+  flex-wrap:wrap-reverse;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom.align-right:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls {
+  justify-content: flex-end;
+  flex-wrap:wrap;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-top.align-center:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls {
+  justify-content: center;
+}
+.divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom.align-center:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls {
+  justify-content: center;
+  flex-wrap:wrap-reverse;
+}
+html.et-fb-preview--tablet .custom-tabs.align-justify:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls,
+html.et-fb-preview--phone .custom-tabs.align-justify:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls, 
+.divi-hacks-custom-tabs.is-phone .custom-tabs.align-justify:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls, 
+.divi-hacks-custom-tabs.is-tablet .custom-tabs.align-justify:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls {
+  flex-direction:column;
+}
+.divi-hacks-custom-tabs.is-desktop .custom-tabs.align-justify:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls,
+html.et-fb-preview--desktop .custom-tabs.align-justify:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls,
+.divi-hacks-custom-tabs.is-tablet .custom-tabs.align-justify:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls,
+html.et-fb-preview--tablet .custom-tabs.align-justify:not(.tabs-on-left):not(.tabs-on-right) ul.et_pb_tabs_controls {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.divi-hacks-custom-tabs.is-desktop .custom-tabs ul.et_pb_tabs_controls,
+html.et-fb-preview--desktop .divi-hacks-custom-tabs .custom-tabs ul.et_pb_tabs_controls,
+.divi-hacks-custom-tabs.is-tablet .custom-tabs ul.et_pb_tabs_controls,
+html.et-fb-preview--tablet .divi-hacks-custom-tabs .custom-tabs ul.et_pb_tabs_controls {
+  flex-wrap:wrap;
+  align-items:stretch;
+}
+.divi-hacks-custom-tabs.is-desktop .custom-tabs.align-justify ul.et_pb_tabs_controls li,
+html.et-fb-preview--desktop .divi-hacks-custom-tabs .custom-tabs.align-justify ul.et_pb_tabs_controls li,
+.divi-hacks-custom-tabs.is-tablet .custom-tabs.align-justify ul.et_pb_tabs_controls li,
+html.et-fb-preview--tablet .divi-hacks-custom-tabs .custom-tabs.align-justify ul.et_pb_tabs_controls li {
+  flex:1 1 auto;
+}
+.divi-hacks-custom-tabs.is-desktop .custom-tabs.hyphenate ul.et_pb_tabs_controls li,
+html.et-fb-preview--desktop .divi-hacks-custom-tabs .custom-tabs.hyphenate ul.et_pb_tabs_controls li,
+.divi-hacks-custom-tabs.is-tablet .custom-tabs.hyphenate ul.et_pb_tabs_controls li,
+html.et-fb-preview--tablet .divi-hacks-custom-tabs .custom-tabs.hyphenate ul.et_pb_tabs_controls li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -epub-hyphens: auto;
+  hyphens: auto;
+}
+.divi-hacks-custom-tabs .custom-tabs ul.et_pb_tabs_controls li {
+  border:0;
+  display:flex !important;
+  flex-direction:column;
+  align-content:center;
+}
+html.et-fb-preview--phone .custom-tabs ul.et_pb_tabs_controls li,
+.divi-hacks-custom-tabs.is-phone .custom-tabs ul.et_pb_tabs_controls li {
+  border:0;
+  display:flex !important;
+}
+.divi-hacks-custom-tabs .custom-tabs ul.et_pb_tabs_controls li:last-child {
+  border-bottom:0;
+}
+.divi-hacks-custom-tabs .custom-tabs ul.et_pb_tabs_controls:after {
+  display:none;
+}
+.divi-hacks-custom-tabs .custom-tabs.text-left ul.et_pb_tabs_controls li {
+  text-align:left;
+}
+.divi-hacks-custom-tabs .custom-tabs.text-right ul.et_pb_tabs_controls li {
+  text-align:right;
+}
+.divi-hacks-custom-tabs .custom-tabs.text-center ul.et_pb_tabs_controls li {
+  text-align:center;
+}
+.divi-hacks-custom-tabs.is-desktop .custom-tabs.no-wrap ul.et_pb_tabs_controls,
+html.et-fb-preview--desktop .divi-hacks-custom-tabs .custom-tabs.no-wrap ul.et_pb_tabs_controls,
+.divi-hacks-custom-tabs.is-tablet .custom-tabs.no-wrap ul.et_pb_tabs_controls,
+html.et-fb-preview--tablet .divi-hacks-custom-tabs .custom-tabs.no-wrap ul.et_pb_tabs_controls {
+  flex-wrap:nowrap !important;
+}
+.divi-hacks-custom-tabs.is-desktop .custom-tabs.tabs-on-top.link .et_pb_tabs_controls li.et_pb_tab_active,
+html.et-fb-preview--desktop .divi-hacks-custom-tabs .custom-tabs.tabs-on-top.link .et_pb_tabs_controls li.et_pb_tab_active,
+.divi-hacks-custom-tabs.is-tablet .custom-tabs.tabs-on-top.link .et_pb_tabs_controls li.et_pb_tab_active,
+html.et-fb-preview--tablet .divi-hacks-custom-tabs .custom-tabs.tabs-on-top.link .et_pb_tabs_controls li.et_pb_tab_active {
+    order: -1;
+}
+.divi-hacks-custom-tabs.is-phone .custom-tabs.tabs-on-top.link .et_pb_tabs_controls li.et_pb_tab_active,
+html.et-fb-preview--phone .divi-hacks-custom-tabs .custom-tabs.tabs-on-top.link .et_pb_tabs_controls li.et_pb_tab_active,
+.divi-hacks-custom-tabs.is-phone .custom-tabs.tabs-on-left.link .et_pb_tabs_controls li.et_pb_tab_active,
+html.et-fb-preview--phone .divi-hacks-custom-tabs .custom-tabs.tabs-on-left.link .et_pb_tabs_controls li.et_pb_tab_active,
+.divi-hacks-custom-tabs.is-phone .custom-tabs.tabs-on-right.link .et_pb_tabs_controls li.et_pb_tab_active,
+html.et-fb-preview--phone .divi-hacks-custom-tabs .custom-tabs.tabs-on-right.link .et_pb_tabs_controls li.et_pb_tab_active {
+    order:1;
+}
+.divi-hacks-custom-tabs.is-desktop .custom-tabs.tabs-on-bottom.link .et_pb_tabs_controls li.et_pb_tab_active,
+html.et-fb-preview--desktop .divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom.link .et_pb_tabs_controls li.et_pb_tab_active,
+.divi-hacks-custom-tabs.is-tablet .custom-tabs.tabs-on-bottom.link .et_pb_tabs_controls li.et_pb_tab_active,
+html.et-fb-preview--tablet .divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom.link .et_pb_tabs_controls li.et_pb_tab_active,
+.divi-hacks-custom-tabs.is-phone .custom-tabs.tabs-on-bottom.link .et_pb_tabs_controls li.et_pb_tab_active,
+html.et-fb-preview--phone .divi-hacks-custom-tabs .custom-tabs.tabs-on-bottom.link .et_pb_tabs_controls li.et_pb_tab_active {
+    order:-1;
+}

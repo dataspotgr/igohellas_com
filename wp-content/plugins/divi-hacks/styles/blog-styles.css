@@ -1,0 +1,436 @@
+
+/**********************************/
+/****** Featured Grid Blog Style *******/
+/**********************************/
+
+@media only screen and (min-width:800px) {
+  .divi-hacks-blog-styles .featured-grid-style article:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)) {
+    padding: 20px 20px calc(20px + 10%) 20px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    margin:0 20px;
+    height:95%;
+    align-self:self-end;
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style article:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)) .entry-featured-image-url img {
+    margin-left:-20px;
+    margin-top:-20px;
+    max-width:calc(100% + 48px);
+
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style > div, .divi-hacks-blog-styles .featured-grid-style > .et_pb_ajax_pagination_container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 33% ) ;
+  }
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1),
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2),
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3),
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    text-align:center;
+    min-height:150px;
+    padding:30px;
+  }
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) {
+    grid-column: 3 / 4 ;
+    grid-row: 1 / 2;
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) {
+    grid-column: 3 / 4 ;
+    grid-row: 2 / 3;
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) {
+    grid-column: 3 / 4 ;
+    grid-row: 3 / 4 ;
+  }
+  .divi-hacks-blog-styles .featured-grid-style article {
+    height:100%;
+    overflow:hidden;
+  }
+  .divi-hacks-blog-styles .et_pb_bg_layout_light.featured-grid-style article:nth-child(1) h2:before,
+  .divi-hacks-blog-styles .et_pb_bg_layout_light.featured-grid-style article:nth-child(2) h2:before,
+  .divi-hacks-blog-styles .et_pb_bg_layout_light.featured-grid-style article:nth-child(3) h2:before,
+  .divi-hacks-blog-styles .et_pb_bg_layout_light.featured-grid-style article:nth-child(4) h2:before {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    top: -20px;
+    background: rgba(255,255,255,0.8);
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+  }
+
+  .divi-hacks-blog-styles .et_pb_bg_layout_dark.featured-grid-style article:nth-child(1) h2:before,
+  .divi-hacks-blog-styles .et_pb_bg_layout_dark.featured-grid-style article:nth-child(2) h2:before,
+  .divi-hacks-blog-styles .et_pb_bg_layout_dark.featured-grid-style article:nth-child(3) h2:before,
+  .divi-hacks-blog-styles .et_pb_bg_layout_dark.featured-grid-style article:nth-child(4) h2:before {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    top: -20px;
+    background: rgba(0,0,0,0.8);
+    z-index:-1;
+    opacity:1;
+    transition:opacity 0.3s ease-out;
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) .entry-featured-image-url,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) .entry-featured-image-url,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) .entry-featured-image-url,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) .entry-featured-image-url {
+    position: absolute !important;
+    z-index: 0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin-bottom: 0;
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) a.entry-featured-image-url img,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) a.entry-featured-image-url img,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) a.entry-featured-image-url img,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) a.entry-featured-image-url img {
+    min-height:100%;
+    object-fit: cover;
+    opacity:1;
+    filter:grayscale(0);
+    transition:all 0.3s linear;
+  }
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1):hover a.entry-featured-image-url img,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2):hover a.entry-featured-image-url img,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3):hover a.entry-featured-image-url img,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4):hover a.entry-featured-image-url img {
+    filter:grayscale(1);
+    opacity:0.1;
+  }
+
+
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1):hover .entry-title,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1):hover .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1):hover .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2):hover .entry-title,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2):hover .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2):hover .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3):hover .entry-title,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3):hover .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3):hover .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4):hover .entry-title,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4):hover .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4):hover .post-content {
+    position: relative;
+    top:0;
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) .entry-title,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) .entry-title,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) .entry-title,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) .entry-title {
+    position: relative;
+    top: 0;
+    transition:all 0.3s ease-out;
+    z-index:2;
+  }
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) .post-content {
+    position: relative;
+    top: 90%;
+    transition:all 0.3s ease-out;
+    z-index:0;
+  }
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1):hover .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1):hover .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2):hover .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2):hover .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3):hover .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3):hover .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4):hover .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4):hover .post-content {
+    z-index:5;
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) a.more-link,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) a.more-link,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) a.more-link,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) a.more-link {
+    color: inherit;
+    border: 2px solid;
+    padding: 6px 15px;
+    margin-top: 20px;
+    font-size: 12pt;
+    cursor:pointer;
+  }
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) a.more-link:hover,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) a.more-link:hover,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) a.more-link:hover,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) a.more-link:hover {
+    background:rgba(255,255,255,0.1);
+  }
+
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) .post-content,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(1) .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(2) .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(3) .post-meta,
+  .divi-hacks-blog-styles .featured-grid-style article:nth-child(4) .post-meta {
+    display:none;
+  }
+}
+.divi-hacks-blog-styles .featured-grid-style .pagination {
+    clear: both;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+}
+.divi-hacks-blog-styles .featured-grid-style .alignleft a, .divi-hacks-blog-styles .square-grid-style .alignright a {
+    background: #fff;
+    padding: 15px 20px;
+}
+
+/**********************************/
+/****** Square Grid Blog Style *******/
+/**********************************/
+
+@media only screen and (max-width: 649px) {
+   .divi-hacks-blog-styles .square-grid-style article {
+    flex: 1 0 calc(100% / 1);
+    -webkit-flex: 1 0 calc(100% / 1);
+    max-width: calc(100vw / 1);
+    min-height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top:0;
+    padding:3vw;
+    overflow:hidden;
+  } 
+}
+@media only screen and (min-width: 650px) and (max-width: 1099px) {
+    .divi-hacks-blog-styles .square-grid-style article {
+    flex: 1 0 calc(100% / 2);
+    -webkit-flex: 1 0 calc(100% / 2);
+    max-width: calc(100vw / 2);
+    min-height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top:0;
+    padding:3vw;
+    overflow:hidden;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1499px) {
+   .divi-hacks-blog-styles .square-grid-style article {
+    flex: 1 0 calc(100% / 3);
+    -webkit-flex: 1 0 calc(100% / 3);
+    max-width: calc(100vw / 3);
+    min-height: 350px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top:0;
+    padding:3vw;
+    overflow:hidden;
+  }   
+}
+@media only screen and (min-width: 1500px) {
+   .divi-hacks-blog-styles .square-grid-style article {
+    flex: 1 0 calc(100% / 4);
+    -webkit-flex: 1 0 calc(100% / 4);
+    max-width: calc(100vw / 4);
+    min-height: 500px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    margin-top:0;
+    padding:3vw;
+    overflow:hidden;
+  } 
+}
+.divi-hacks-blog-styles .et_pb_bg_layout_light.square-grid-style article:hover:before,
+.divi-hacks-blog-styles .et_pb_bg_layout_dark.square-grid-style article:hover:before {
+  opacity:0;
+}
+.divi-hacks-blog-styles .et_pb_bg_layout_light.square-grid-style article:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50%;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 80%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(80%, rgba(255,255,255,0.8)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 80%,rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 80%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 80%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    z-index:1;
+    opacity:1;
+    transition:opacity 0.3s ease-out;
+}
+.divi-hacks-blog-styles .et_pb_bg_layout_dark.square-grid-style article:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 80%, rgba(0,0,0,0.7) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(80%, rgba(0,0,0,0.7)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 80%,rgba(0,0,0,0.7) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 80%, rgba(0,0,0,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 80%,rgba(0,0,0,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+    z-index:1;
+    opacity:1;
+    transition:opacity 0.3s ease-out;
+}
+.divi-hacks-blog-styles .square-grid-style > div, .divi-hacks-blog-styles .square-grid-style .et_pb_ajax_pagination_container {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    flex-wrap: wrap;
+}
+.divi-hacks-blog-styles .square-grid-style a.entry-featured-image-url {
+    position: absolute !important;
+    z-index: 0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin-bottom: 0;
+}
+.divi-hacks-blog-styles .square-grid-style a.entry-featured-image-url img {
+    min-height:100%;
+    object-fit: cover;
+    opacity:1;
+    filter:grayscale(0);
+    transition:all 0.3s linear;
+}
+.divi-hacks-blog-styles .square-grid-style article:hover a.entry-featured-image-url img {
+    filter:grayscale(1);
+    opacity:0.1;
+}
+
+
+.divi-hacks-blog-styles .square-grid-style article:hover .entry-title,
+.divi-hacks-blog-styles .square-grid-style article:hover .post-meta,
+.divi-hacks-blog-styles .square-grid-style article:hover .post-content {
+    position: relative;
+    top:0;
+}
+.divi-hacks-blog-styles .square-grid-style article .entry-title {
+    position: relative;
+    top: 90%;
+    transition:all 0.3s ease-out;
+    z-index:2;
+}
+.divi-hacks-blog-styles .square-grid-style article .post-meta,
+.divi-hacks-blog-styles .square-grid-style article .post-content {
+    position: relative;
+    top: 90%;
+    transition:all 0.3s ease-out;
+    z-index:0;
+}
+.divi-hacks-blog-styles .square-grid-style article:hover .post-meta,
+.divi-hacks-blog-styles .square-grid-style article:hover .post-content {
+    z-index:5;
+}
+.divi-hacks-blog-styles .square-grid-style article a.more-link {
+    color: inherit;
+    border: 2px solid;
+    padding: 6px 15px;
+    margin-top: 20px;
+    font-size: 12pt;
+    cursor:pointer;
+    width: fit-content;
+}
+.divi-hacks-blog-styles .square-grid-style article a.more-link:hover {
+  background:rgba(255,255,255,0.1);
+}
+.divi-hacks-blog-styles .square-grid-style .pagination {
+    clear: both;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+}
+.divi-hacks-blog-styles .square-grid-style .alignleft a, .divi-hacks-blog-styles .square-grid-style .alignright a {
+    background: #fff;
+    padding: 15px 20px;
+}
+
+/**********************************/
+/****** Short List Blog Style *******/
+/**********************************/
+
+.divi-hacks-blog-styles .short-list-style a.entry-featured-image-url {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    float: left;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.divi-hacks-blog-styles .short-list-style .entry-featured-image-url img {
+    height: 100px;
+    object-fit: cover;
+}
+.divi-hacks-blog-styles .short-list-style article {
+    max-height: 130px;
+    overflow: hidden;
+    padding: 13px 20px 20px 20px;
+    margin-bottom: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid #ddd;
+}
+.divi-hacks-blog-styles .short-list-style article:hover {
+    height: auto;
+    max-height: 500px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.2);
+    margin: 0 0 20px 0;
+    padding: 20px 20px 20px 20px;
+}
+.divi-hacks-blog-styles .short-list-style h2.entry-title {
+    min-width: 100%;
+    font-size: 130%
+}
+.divi-hacks-blog-styles .short-list-style article:not(:hover):before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 50%;
+    left: 0;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(90%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}

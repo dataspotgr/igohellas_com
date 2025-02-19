@@ -1,0 +1,112 @@
+/*************************************************/
+/**************** Background Hover Styles ****************/
+/*************************************************/
+
+.divi-hacks-bg-effects .bg-effects {
+	overflow:hidden;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.divi-hacks-bg-effects .bg-effects > * {
+	z-index:1;
+}
+.divi-hacks-bg-effects .bg-effects:not(.et_pb_section_parallax)::after,
+.divi-hacks-bg-effects .bg-effects.et_pb_section_parallax .et_parallax_bg::after {
+	background-image:inherit;
+	background-size:inherit;
+	background-position:inherit;
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:0;
+	-webkit-transform: var(--transition-duration);
+	-webkit-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-moz-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-ms-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-o-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-webkit-transform: var(--background-transform);
+	-moz-transform: var(--background-transform);
+	-ms-transform: var(--background-transform);
+	-o-transform: var(--background-transform);
+	transform: var(--background-transform);
+	-webkit-filter: var(--background-filter);
+	-moz-filter: var(--background-filter);
+	-ms-filter: var(--background-filter);
+	-o-filter: var(--background-filter);
+	filter: var(--background-filter);
+}
+.divi-hacks-bg-effects .bg-effects:not(.et_pb_section_parallax):hover::after,
+.divi-hacks-bg-effects .bg-effects.et_pb_section_parallax:hover .et_parallax_bg:not(.et_pb_parallax_css)::after {
+	background-image:inherit;
+	background-size:inherit;
+	background-position:inherit;
+	-webkit-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-moz-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-ms-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-o-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-webkit-transform: var(--background-hover-transform, var(--background-transform));
+    -moz-transform: var(--background-hover-transform, var(--background-transform));
+    -ms-transform: var(--background-hover-transform, var(--background-transform));
+    -o-transform: var(--background-hover-transform, var(--background-transform));
+    transform: var(--background-hover-transform, var(--background-transform));
+    -webkit-filter: var(--background-hover-filter, var(--background-filter));
+    -moz-filter: var(--background-hover-filter, var(--background-filter));
+    -ms-filter: var(--background-hover-filter, var(--background-filter));
+    -o-filter: var(--background-hover-filter, var(--background-filter));
+    filter: var(--background-hover-filter, var(--background-filter));
+}
+.divi-hacks-bg-effects .bg-effects.gradient-overlay.et_pb_section_parallax .et_parallax_bg_wrap {
+    z-index: 0;
+}
+.divi-hacks-bg-effects .bg-effects.et_pb_section_parallax .et_parallax_bg.et_pb_parallax_css::after {
+    z-index: 1;
+    background-attachment: fixed;
+    background-image:inherit;
+	background-size:inherit;
+	background-position:inherit;
+	-webkit-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-moz-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-ms-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-o-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-webkit-transform: var(--background-transform);
+	-moz-transform: var(--background-transform);
+	-ms-transform: var(--background-transform);
+	-o-transform: var(--background-transform);
+	transform: var(--background-transform);
+	-webkit-filter: var(--background-filter);
+	-moz-filter: var(--background-filter);
+	-ms-filter: var(--background-filter);
+	-o-filter: var(--background-filter);
+	filter: var(--background-filter);
+}
+.divi-hacks-bg-effects .bg-effects.et_pb_section_parallax:hover .et_parallax_bg.et_pb_parallax_css::after {
+    z-index: 1;
+    background-attachment: fixed;
+    background-image:inherit;
+	background-size:inherit;
+	background-position:inherit;
+	-webkit-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-moz-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-ms-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-o-transition: all var(--transition-duration, 0.3s) ease-in-out;
+	transition: all var(--transition-duration, 0.3s) ease-in-out;
+	-webkit-transform: var(--background-hover-transform, var(--background-transform));
+    -moz-transform: var(--background-hover-transform, var(--background-transform));
+    -ms-transform: var(--background-hover-transform, var(--background-transform));
+    -o-transform: var(--background-hover-transform, var(--background-transform));
+    transform: var(--background-hover-transform, var(--background-transform));
+    -webkit-filter: var(--background-hover-filter, var(--background-filter));
+    -moz-filter: var(--background-hover-filter, var(--background-filter));
+    -ms-filter: var(--background-hover-filter, var(--background-filter));
+    -o-filter: var(--background-hover-filter, var(--background-filter));
+    filter: var(--background-hover-filter, var(--background-filter));
+}

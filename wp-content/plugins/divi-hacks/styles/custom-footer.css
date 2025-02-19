@@ -1,0 +1,29 @@
+
+/***********************************/
+/***  Custom Footer   ***/
+/***********************************/
+
+.divi-hacks-custom-footer #et-footer-nav, 
+.divi-hacks-custom-footer #footer-bottom {
+    display: none !important;
+}
+.divi-hacks-custom-footer #main-footer .container {
+    width: 100%;
+    max-width: 100%;
+}
+.divi-hacks-custom-footer #footer-widgets {
+    padding: 0 !important;
+}
+.divi-hacks-custom-footer .footer-widget:nth-child(n) {
+    margin: 0 !important;
+    width:100% !important;
+}
+.divi-hacks-custom-footer .footer-widget .fwidget {
+    min-width: 100%;
+}
+.divi-hacks-custom-footer #main-footer li:before {
+    display: none;
+}
+.divi-hacks-custom-footer #main-footer li {
+    padding-left:0px !important;
+}

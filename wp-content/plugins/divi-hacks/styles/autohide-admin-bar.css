@@ -1,0 +1,48 @@
+
+/*************************************************/
+/************** Auto-hide Admin Bar **************/
+/*************************************************/
+
+body.divi-hacks-autohide-admin-bar.admin-bar.is-desktop #wpadminbar,
+html.et-fb-preview--desktop body.divi-hacks-autohide-admin-bar.admin-bar #wpadminbar {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    top:-22px;
+    transition-delay: 0.8s;
+    -webkit-transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -o-transition-delay: 0.8s;
+}
+body.divi-hacks-autohide-admin-bar.admin-bar.is-desktop #wpadminbar:hover,
+html.et-fb-preview--desktop body.divi-hacks-autohide-admin-bar.admin-bar #wpadminbar:hover {
+    filter: alpha(opacity=1);
+    opacity: 1;
+    top:0;
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+}
+
+body.divi-hacks-autohide-admin-bar.admin-bar.is-desktop:not(.et_secondary_nav_enabled) #main-header,
+html.et-fb-preview--desktop.no-margin body.divi-hacks-autohide-admin-bar.admin-bar:not(.et_secondary_nav_enabled) #main-header {
+    top:0 !important;
+}
+body.divi-hacks-autohide-admin-bar.admin-bar.is-desktop.et_secondary_nav_enabled:not(.divi-hacks-before-header) #top-header,
+html.et-fb-preview--desktop.no-margin body.divi-hacks-autohide-admin-bar.admin-bar.et_secondary_nav_enabled:not(.divi-hacks-before-header) #top-header {
+    top:0 !important;
+}
+body.divi-hacks-autohide-admin-bar.admin-bar.is-desktop.et_secondary_nav_enabled:not(.divi-hacks-before-header) #main-header,
+html.et-fb-preview--desktop.no-margin body.divi-hacks-autohide-admin-bar.admin-bar.et_secondary_nav_enabled:not(.divi-hacks-before-header) #main-header {
+    margin-top:-32px !important;
+}
+
+@media screen and (min-width: 981px) {
+  html.no-margin {
+      margin-top:0 !important;
+  }
+}

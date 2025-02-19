@@ -1,0 +1,126 @@
+
+/*************************************************/
+/************* Menu Dropdown Columns *************/
+/*************************************************/
+
+.divi-hacks-nav-columns .et_mobile_menu li.nav-columns li li {
+    padding-left: 0px;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns.mega {
+  position:inherit;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns.mega > ul.sub-menu {
+  left:30px !important;
+  right:30px !important;
+  position:absolute !important;
+  width:auto !important;
+  box-sizing:border-box !important;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns.mega ul li a,
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns.mega ul li {
+    width: 100% !important;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns.mega > ul {
+    justify-content: space-between;
+}
+.divi-hacks-nav-columns.is-desktop.et_vertical_nav #top-menu li ul ul {
+    top: 0px;
+}
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li a {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li ul.sub-menu {
+    opacity: 1 !important;
+    position: relative;
+    right: 0 !important;
+    left:0 !important;
+    top: 0;
+    margin-right: 0 !important;
+    border: 0;
+    background: transparent !important;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+.divi-hacks-nav-columns.is-desktop li.nav-columns.et-hover.et-show-dropdown ul li ul.sub-menu,
+.divi-hacks-nav-columns.is-desktop li.nav-columns:hover ul li ul.sub-menu {
+    visibility: visible;
+    animation: none;
+}
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li {
+    box-sizing: content-box;
+}
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li ul li {
+    padding: 0 !important;
+}
+.divi-hacks-nav-columns.is-desktop li ul ul {
+    margin-top:0;
+}
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li a:after {
+    display: none !important;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns > ul,
+.divi-hacks-nav-columns.is-desktop.et_vertical_nav li.nav-columns > ul {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-flow: nowrap;
+    width: auto !important;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns > ul,
+.divi-hacks-nav-columns.is-desktop li.nav-columns > ul {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-flow: nowrap;
+    width: max-content !important;
+    width: -moz-fit-content;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns ul li a,
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li a {
+    padding-left:0 !important;
+    display:flex !important;
+}
+
+.divi-hacks-nav-columns.is-desktop.et_vertical_nav li.nav-columns ul li a,
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li a {
+    display:flex !important;
+    width:auto !important;
+    min-width:150px !important;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns:not(.left):not(.center) > ul,
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns.right > ul,
+.divi-hacks-nav-columns.is-desktop li.nav-columns:not(.left):not(.center) > ul,
+.divi-hacks-nav-columns.is-desktop li.nav-columns.right > ul {
+    right: 0;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns.left > ul,
+.divi-hacks-nav-columns.is-desktop li.nav-columns.left > ul {
+    left: 0;
+}
+.divi-hacks-nav-columns.is-desktop li.nav-columns > ul > li > a {
+  align-items:center;
+}
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns.center > ul,
+.divi-hacks-nav-columns.is-desktop:not(.et_vertical_nav) li.nav-columns.middle > ul,
+.divi-hacks-nav-columns.is-desktop li.nav-columns.center > ul,
+.divi-hacks-nav-columns.is-desktop li.nav-columns.middle > ul {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li a {
+  text-align: left;
+}
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li a {
+  padding-right:0 !important;
+}
+.divi-hacks-nav-columns.is-desktop li.nav-columns ul li > ul:hover {
+    z-index: 99999;
+}

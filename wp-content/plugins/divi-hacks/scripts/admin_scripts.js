@@ -1,0 +1,1 @@
+!function(){"use strict";document.body.addEventListener("click",function(e){var t=e.target,c=t.dataset.copytarget,o=c?document.querySelector(c):null;if(o&&o.select){o.select();try{document.execCommand("copy"),o.blur(),t.classList.add("copied"),setTimeout(function(){t.classList.remove("copied")},1500)}catch(e){alert("please press Ctrl/Cmd+C to copy")}}},!0)}();

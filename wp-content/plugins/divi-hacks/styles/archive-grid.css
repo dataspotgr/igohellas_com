@@ -1,0 +1,162 @@
+
+/**********************************/
+/****** default archive grid layout *******/
+/**********************************/
+
+@media only screen and (max-width: 799px) {
+  .divi-hacks-archive-grid.blog #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.archive #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.search-results #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.search-no-results #et-main-area > div:not([id^="divi-hacks-"]) article,
+  #et-main-area > [id^="divi-hacks-"] .archive:not(.default) article {
+        flex: 1 0 calc(100% / 1);
+        -webkit-flex: 1 0 calc(100% / 1);
+        -ms-flex: 1 0 calc(100% / 1);
+        max-width: calc(100% / 1);
+        height:fit-content;
+  }
+  .divi-hacks-archive-grid.blog:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area,
+  .divi-hacks-archive-grid.archive:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area,
+  .divi-hacks-archive-grid.search-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area,
+  .divi-hacks-archive-grid.search-no-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area,
+  #et-main-area > [id^="divi-hacks-"] .archive:not(.default) #left-area {
+        margin-left:-20px;
+      margin-top:-20px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+  .divi-hacks-archive-grid.blog #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.archive #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.search-results #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.search-no-results #et-main-area > div:not([id^="divi-hacks-"]) article,
+  #et-main-area > [id^="divi-hacks-"] .archive:not(.default) article,
+  .divi-hacks-archive-grid #et-main-area > [id^="divi-hacks-"] .archive:not(.default) article {
+        flex: 1 0 calc(100% / 2 - 40px);
+        -ms-flex: 1 0 calc(100% / 2 - 40px);
+        -webkit-flex: 1 0 calc(100% / 2 - 40px);
+        max-width: calc(100% / 2 - 40px);
+        height:-moz-fit-content;
+        height:fit-content;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .divi-hacks-archive-grid.divi-hacks-full-width-archive.blog #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.divi-hacks-full-width-archive.archive #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.divi-hacks-full-width-archive.search-results #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.divi-hacks-full-width-archive.search-no-results #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-full-width-archive #et-main-area > [id^="divi-hacks-"] .archive.grid:not(.default):not(.sidebar) article,
+  .divi-hacks-archive-grid #et-main-area > [id^="divi-hacks-"] .archive:not(.default):not(.sidebar) article {
+        flex: 1 0 calc(100% / 3 - 40px);
+        -webkit-flex: 1 0 calc(100% / 3 - 40px);
+        -ms-flex: 1 0 calc(100% / 3 - 40px);
+        max-width: calc(100% / 3 - 40px);
+        height:-moz-fit-content;
+        height:fit-content;
+    }
+  .divi-hacks-archive-grid.blog:not(.divi-hacks-full-width-archive) #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.archive:not(.divi-hacks-full-width-archive) #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.search-results:not(.divi-hacks-full-width-archive) #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-archive-grid.search-no-results:not(.divi-hacks-full-width-archive) #et-main-area > div:not([id^="divi-hacks-"]) article,
+  .divi-hacks-full-width-archive #et-main-area > [id^="divi-hacks-"] .archive.grid.sidebar:not(.default) article,
+  body:not(.divi-hacks-full-width-archive) #et-main-area > [id^="divi-hacks-"] .archive.grid:not(.default) article,
+  .divi-hacks-archive-grid:not(.divi-hacks-full-width-archive) #et-main-area > [id^="divi-hacks-"] .archive.sidebar:not(.default) article,
+  .divi-hacks-archive-grid.divi-hacks-full-width-archive #et-main-area > [id^="divi-hacks-"] .archive.sidebar:not(.default) article {
+        flex: 1 0 calc(100% / 2 - 40px);
+        -webkit-flex: 1 0 calc(100% / 2 - 40px);
+        -ms-flex: 1 0 calc(100% / 2 - 40px);
+        max-width: calc(100% / 2 - 40px);
+        height:-moz-fit-content;
+        height:fit-content;
+    }
+    #et-main-area > [id^="divi-hacks-"] .archive.grid[data-dhcolumns="4"] article {
+        flex: 1 0 calc(100% / 4 - 40px) !important;
+        -webkit-flex: 1 0 calc(100% / 4 - 40px) !important;
+        -ms-flex: 1 0 calc(100% / 4 - 40px) !important;
+        max-width: calc(100% / 4 - 40px) !important;
+        height:-moz-fit-content;
+        height:fit-content;
+    }
+    #et-main-area > [id^="divi-hacks-"] .archive.grid[data-dhcolumns="3"] article {
+        flex: 1 0 calc(100% / 3 - 60px) !important;
+        -webkit-flex: 1 0 calc(100% / 3 - 40px) !important;
+        -ms-flex: 1 0 calc(100% / 3 - 40px) !important;
+        max-width: calc(100% / 3 - 40px) !important;
+        height:-moz-fit-content;
+        height:fit-content;
+    }
+    #et-main-area > [id^="divi-hacks-"] .archive.grid[data-dhcolumns="2"] article {
+        flex: 1 0 calc(100% / 2 - 40px) !important;
+        -webkit-flex: 1 0 calc(100% / 2 - 40px) !important;
+        -ms-flex: 1 0 calc(100% / 2 - 40px) !important;
+        max-width: calc(100% / 2 - 40px) !important;
+        height:-moz-fit-content;
+        height:fit-content;
+    }
+}
+#et-main-area > [id^="divi-hacks-"] .archive.grid[data-dhcolumns="1"] article {
+    flex: 1 0 calc(100% / 1 - 40px) !important;
+    -webkit-flex: 1 0 calc(100% / 1 - 40px) !important;
+    -ms-flex: 1 0 calc(100% / 1 - 40px) !important;
+    max-width: calc(100% / 1 - 40px) !important;
+}
+.divi-hacks-archive-grid.blog #et-main-area > div:not([id^="divi-hacks-"]) article,
+.divi-hacks-archive-grid.archive #et-main-area > div:not([id^="divi-hacks-"]) article,
+.divi-hacks-archive-grid.search-results #et-main-area > div:not([id^="divi-hacks-"]) article,
+.divi-hacks-archive-grid.search-no-results #et-main-area > div:not([id^="divi-hacks-"]) article,
+#et-main-area > [id^="divi-hacks-"] .archive:not(.default) > * > * > article {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 20px;
+    box-shadow:0 0 50px rgba(0,0,0,0.1);
+    padding:20px;
+    transform:scale(1);
+    transition: transform 0.3s ease-in-out;
+    background: var(--article-background, #fff);
+}
+.divi-hacks-archive-grid.blog #et-main-area > div:not([id^="divi-hacks-"]) .pagination,
+.divi-hacks-archive-grid.archive #et-main-area > div:not([id^="divi-hacks-"]) .pagination,
+.divi-hacks-archive-grid.search-results #et-main-area > div:not([id^="divi-hacks-"]) .pagination,
+.divi-hacks-archive-grid.search-no-results #et-main-area > div:not([id^="divi-hacks-"]) .pagination,
+#et-main-area > [id^="divi-hacks-"] .archive:not(.default) .pagination {
+  width:100%;
+}
+.divi-hacks-archive-grid.blog:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) article:hover,
+.divi-hacks-archive-grid.archive:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) article:hover,
+.divi-hacks-archive-grid.search-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) article:hover,
+.divi-hacks-archive-grid.search-no-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) article:hover,
+#et-main-area > [id^="divi-hacks-"] .archive:not(.default) article:hover {
+    transform:scale(1.01);
+}
+.divi-hacks-archive-grid.blog:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area,
+.divi-hacks-archive-grid.archive:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area,
+.divi-hacks-archive-grid.search-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area,
+.divi-hacks-archive-grid.search-no-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area,
+#et-main-area > [id^="divi-hacks-"] .archive:not(.default) #left-area {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;    
+  flex-wrap: wrap;
+}
+
+.divi-hacks-archive-grid.blog:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area a img,
+.divi-hacks-archive-grid.archive:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area a img,
+.divi-hacks-archive-grid.search-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area a img,
+.divi-hacks-archive-grid.search-no-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) #left-area a img,
+#et-main-area > [id^="divi-hacks-"] .archive:not(.default) #left-area a img {
+    margin-left: -20px;
+    margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: 20px;
+    max-width: calc(100% + 40px);
+    vertical-align: top;
+}
+.divi-hacks-archive-grid.blog:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) .et_pb_post .entry-featured-image-url,
+.divi-hacks-archive-grid.archive:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) .et_pb_post .entry-featured-image-url,
+.divi-hacks-archive-grid.search-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) .et_pb_post .entry-featured-image-url,
+.divi-hacks-archive-grid.search-no-results:not(.woocommerce) #et-main-area > div:not([id^="divi-hacks-"]) .et_pb_post .entry-featured-image-url,
+#et-main-area > [id^="divi-hacks-"] .archive:not(.default) .et_pb_post .entry-featured-image-url { 
+  margin-bottom:0px; 
+}

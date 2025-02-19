@@ -1,0 +1,32 @@
+
+/**********************************/
+/****** Full width archive pages *******/
+/**********************************/
+
+.divi-hacks-full-width-archive.blog #main-content .container:before,
+.divi-hacks-full-width-archive.archive #main-content .container:before,
+.divi-hacks-full-width-archive.search-results #main-content .container:before,
+.divi-hacks-full-width-archive.search-no-results #main-content .container:before {
+    display: none;
+}
+.divi-hacks-full-width-archive.blog div:not(.sidebar) > div > #sidebar,
+.divi-hacks-full-width-archive.archive div:not(.sidebar) > div > #sidebar,
+.divi-hacks-full-width-archive.search-results div:not(.sidebar) > div > #sidebar,
+.divi-hacks-full-width-archive.search-no-results div:not(.sidebar) > div > #sidebar,
+.blog .archive.no-sidebar #sidebar,
+.archive .archive.no-sidebar #sidebar,
+.search-results .archive.no-sidebar #sidebar,
+.search-no-results .archive.no-sidebar #sidebar {
+    display: none;
+}
+.divi-hacks-full-width-archive.blog :not(.sidebar) > div > #left-area,
+.divi-hacks-full-width-archive.archive :not(.sidebar) > div > #left-area,
+.divi-hacks-full-width-archive.search-results :not(.sidebar) > div > #left-area,
+.divi-hacks-full-width-archive.search-no-results :not(.sidebar) > div > #left-area,
+.blog .archive.no-sidebar #left-area,
+.archive .archive.no-sidebar #left-area,
+.search-results .archive.no-sidebar #left-area,
+.search-no-results .archive.no-sidebar #left-area {
+    width: 100% !important;
+    padding-right: 0 !important;
+}

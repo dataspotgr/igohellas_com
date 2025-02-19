@@ -1,0 +1,227 @@
+
+/**********************************/
+/******** Element Styles ***********/
+/**********************************/
+
+.divi-hacks-module-styles .fractal {
+  box-shadow:inset 0 -20px 0 rgba(0,0,0,0.05), inset 0 20px 0 rgba(0,0,0,0.05), inset 20px 0 0 rgba(0,0,0,0.05), inset -20px 0 0 rgba(0,0,0,0.05),inset 0 -40px 0 rgba(0,0,0,0.04), inset 0 40px 0 rgba(0,0,0,0.04), inset 40px 0 0 rgba(0,0,0,0.04), inset -40px 0 0 rgba(0,0,0,0.04),inset 0 -60px 0 rgba(0,0,0,0.03), inset 0 60px 0 rgba(0,0,0,0.03), inset 60px 0 0 rgba(0,0,0,0.03), inset -60px 0 0 rgba(0,0,0,0.03),inset 0 -80px 0 rgba(255,255,255,0.03), inset 0 80px 0 rgba(255,255,255,0.03), inset 80px 0 0 rgba(255,255,255,0.03), inset -80px 0 0 rgba(255,255,255,0.03),inset 0 -100px 0 rgba(255,255,255,0.04), inset 0 100px 0 rgba(255,255,255,0.04), inset 100px 0 0 rgba(255,255,255,0.04), inset -100px 0 0 rgba(255,255,255,0.04),inset 0 -120px 0 rgba(255,255,255,0.05), inset 0 120px 0 rgba(255,255,255,0.05), inset 120px 0 0 rgba(255,255,255,0.05), inset -120px 0 0 rgba(255,255,255,0.05);
+}
+.divi-hacks-module-styles .frame-border {
+  box-shadow:inset 0 0 0 5px rgba(0,0,0,0.2), inset 0 0 0 8px rgba(255,255,255,0.5), inset 0 0 0 10px rgba(0,0,0,0.1), 0 0 0 6px rgba(0,0,0,0.1), 0 0 0 2px rgba(255,255,255,0.8);
+}
+.divi-hacks-module-styles .inset-bevel {
+  box-shadow:0 -10px 10px 2px rgba(0,0,0,0.07), 0 4px 10px 7px rgba(255,255,255,0.7), inset 0 50px 30px -40px rgba(0,0,0,0.03), inset 0 100px 50px -50px rgba(0,0,0,0.02);
+}
+.divi-hacks-module-styles .round-bevel {
+  box-shadow:inset 0 -25px 30px -30px rgba(0,0,0,0.2), inset 0 -5px 30px 0 rgba(0,0,0,0.2), inset 0 15px 5px 0 rgba(255,255,255,0.25), 0 5px 5px rgba(0,0,0,0.1), 0 45px 30px -20px rgba(0,0,0,0.18), inset 0 50px 20px rgba(255,255,255,0.1), inset 0 -50px 50px rgba(0,0,0,0.05);
+}
+.divi-hacks-module-styles .bottom-corners-shadow:not(.et_pb_image):not(.et_pb_gallery), 
+.divi-hacks-module-styles .bottom-corners-shadow.et_pb_image .et_pb_image_wrap, 
+.divi-hacks-module-styles .bottom-corners-shadow.et_pb_gallery .et_pb_gallery_item, 
+.divi-hacks-module-styles .bottom-right-shadow:not(.et_pb_image):not(.et_pb_gallery), 
+.divi-hacks-module-styles .bottom-right-shadow.et_pb_image .et_pb_image_wrap,
+.divi-hacks-module-styles .bottom-right-shadow.et_pb_gallery .et_pb_gallery_item,
+.divi-hacks-module-styles .bottom-left-shadow:not(.et_pb_image):not(.et_pb_gallery),
+.divi-hacks-module-styles .bottom-left-shadow.et_pb_image .et_pb_image_wrap,
+.divi-hacks-module-styles .bottom-left-shadow.et_pb_gallery .et_pb_gallery_item, 
+.divi-hacks-module-styles .vertical-bend-shadow:not(.et_pb_image):not(.et_pb_gallery), 
+.divi-hacks-module-styles .vertical-bend-shadow.et_pb_image .et_pb_image_wrap, 
+.divi-hacks-module-styles .vertical-bend-shadow.et_pb_gallery .et_pb_gallery_item, 
+.divi-hacks-module-styles .horizontal-bend-shadow:not(.et_pb_image):not(.et_pb_gallery),
+.divi-hacks-module-styles .horizontal-bend-shadow.et_pb_image .et_pb_image_wrap,
+.divi-hacks-module-styles .horizontal-bend-shadow.et_pb_gallery .et_pb_gallery_item {
+  position:relative;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.05);
+}
+.divi-hacks-module-styles .vertical-bend-shadow:not(.et_pb_image):not(.et_pb_gallery)::before,
+.divi-hacks-module-styles .vertical-bend-shadow.et_pb_image .et_pb_image_wrap::before,
+.divi-hacks-module-styles .vertical-bend-shadow.et_pb_gallery .et_pb_gallery_item::before,
+.divi-hacks-module-styles .vertical-bend-shadow.et_pb_gallery .et_pb_gallery_items::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 20%;
+  background: rgba(0,0,0,0.5);
+  left:10%;
+  bottom:0;
+  z-index:-1;
+  -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.15);
+  -moz-box-shadow:0 5px 5px rgba(0,0,0,0.15);
+  -ms-box-shadow:0 5px 5px rgba(0,0,0,0.15);
+  -o-box-shadow:0 5px 5px rgba(0,0,0,0.15);
+  box-shadow:0 5px 5px rgba(0,0,0,0.15);
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  -o-border-radius:50%;
+  border-radius:50%;
+  visibility:visible;
+}
+.divi-hacks-module-styles .vertical-bend-shadow:not(.et_pb_image):not(.et_pb_gallery)::after,
+.divi-hacks-module-styles .vertical-bend-shadow.et_pb_image .et_pb_image_wrap::after,
+.divi-hacks-module-styles .vertical-bend-shadow.et_pb_gallery .et_pb_gallery_item::after,
+.divi-hacks-module-styles .vertical-bend-shadow.et_pb_gallery .et_pb_gallery_items::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 20%;
+  background: rgba(0,0,0,0.5);
+  left:10%;
+  top:0;
+  z-index:-1;
+  -webkit-box-shadow:0 -5px 5px rgba(0,0,0,0.15);
+  -moz-box-shadow:0 -5px 5px rgba(0,0,0,0.15);
+  -ms-box-shadow:0 -5px 5px rgba(0,0,0,0.15);
+  -o-box-shadow:0 -5px 5px rgba(0,0,0,0.15);
+  box-shadow:0 -5px 5px rgba(0,0,0,0.15);
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  -o-border-radius:50%;
+  border-radius:50%;
+  visibility:visible;
+}
+.divi-hacks-module-styles .horizontal-bend-shadow:not(.et_pb_image):not(.et_pb_gallery)::before,
+.divi-hacks-module-styles .horizontal-bend-shadow.et_pb_image .et_pb_image_wrap::before,
+.divi-hacks-module-styles .horizontal-bend-shadow.et_pb_gallery .et_pb_gallery_item::before,
+.divi-hacks-module-styles .horizontal-bend-shadow.et_pb_gallery .et_pb_gallery_items::before {
+  content: '';
+  position: absolute;
+  height: 80%;
+  width: 20%;
+  background: rgba(0,0,0,0.5);
+  left:0;
+  top:10%;
+  z-index:-1;
+  -webkit-box-shadow:-5px 0 5px rgba(0,0,0,0.15);
+  -moz-box-shadow:-5px 0 5px rgba(0,0,0,0.15);
+  -ms-box-shadow:-5px 0 5px rgba(0,0,0,0.15);
+  -o-box-shadow:-5px 0 5px rgba(0,0,0,0.15);
+  box-shadow:-5px 0 5px rgba(0,0,0,0.15);
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  -o-border-radius:50%;
+  border-radius:50%;
+  visibility:visible;
+}
+.divi-hacks-module-styles .horizontal-bend-shadow:not(.et_pb_image):not(.et_pb_gallery)::after,
+.divi-hacks-module-styles .horizontal-bend-shadow.et_pb_image .et_pb_image_wrap::after,
+.divi-hacks-module-styles .horizontal-bend-shadow.et_pb_gallery .et_pb_gallery_item::after,
+.divi-hacks-module-styles .horizontal-bend-shadow.et_pb_gallery .et_pb_gallery_items::after {
+  content: '';
+  position: absolute;
+  height: 80%;
+  width: 20%;
+  background: rgba(0,0,0,0.5);
+  right:0;
+  top:10%;
+  z-index:-1;
+  -moz-box-shadow:5px 0 5px rgba(0,0,0,0.15);
+  -webkit-box-shadow:5px 0 5px rgba(0,0,0,0.15);
+  -ms-box-shadow:5px 0 5px rgba(0,0,0,0.15);
+  -o-box-shadow:5px 0 5px rgba(0,0,0,0.15);
+  box-shadow:5px 0 5px rgba(0,0,0,0.15);
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  -o-border-radius:50%;
+  visibility:visible;
+  border-radius:50%;
+}
+.divi-hacks-module-styles .bottom-right-shadow:not(.et_pb_image):not(.et_pb_gallery)::after,
+.divi-hacks-module-styles .bottom-right-shadow.et_pb_image .et_pb_image_wrap::after,
+.divi-hacks-module-styles .bottom-right-shadow.et_pb_gallery .et_pb_gallery_item::after,
+.divi-hacks-module-styles .bottom-right-shadow.et_pb_gallery .et_pb_gallery_items::after {
+   content: '';
+   position: absolute;
+   width: 50%;
+   height: 20%;
+   -webkit-box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   -moz-box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   -ms-box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   -o-box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   -webkit-transform: rotate(3deg) skew(10deg);
+   -moz-transform: rotate(3deg) skew(10deg);
+   -o-transform: rotate(3deg) skew(10deg);
+   -ms-transform: rotate(3deg) skew(10deg);
+   transform: rotate(3deg) skew(10deg);
+   left: auto;
+   bottom:8px;
+   right: 15px;
+   z-index:-1;
+   visibility:visible;
+}
+.divi-hacks-module-styles .bottom-left-shadow:not(.et_pb_image):not(.et_pb_gallery)::after,
+.divi-hacks-module-styles .bottom-left-shadow.et_pb_image .et_pb_image_wrap::after,
+.divi-hacks-module-styles .bottom-left-shadow.et_pb_gallery .et_pb_gallery_item::after,
+.divi-hacks-module-styles .bottom-left-shadow.et_pb_gallery .et_pb_gallery_items::after {
+   content: '';
+   position: absolute;
+   width: 50%;
+   height: 20%;
+   -webkit-box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   -moz-box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   -ms-box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   -o-box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   -webkit-transform: rotate(-3deg) skew(-10deg);
+   -moz-transform: rotate(-3deg) skew(-10deg);
+   -o-transform: rotate(-3deg) skew(-10deg);
+   -ms-transform: rotate(-3deg) skew(-10deg);
+   transform: rotate(-3deg) skew(-10deg);
+   right: auto;
+   bottom:8px;
+   left: 15px;
+   z-index:-1;
+   visibility:visible;
+}
+.divi-hacks-module-styles .bottom-corners-shadow:not(.et_pb_image):not(.et_pb_gallery)::before, 
+.divi-hacks-module-styles .bottom-corners-shadow.et_pb_image .et_pb_image_wrap::before,
+.divi-hacks-module-styles .bottom-corners-shadow.et_pb_gallery .et_pb_gallery_item::before,
+.divi-hacks-module-styles .bottom-corners-shadow.et_pb_gallery .et_pb_gallery_items::before {
+   content: '';
+   position: absolute;
+   width: 50%;
+   height: 20%;
+   -webkit-box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   -moz-box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   -ms-box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   -o-box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   box-shadow: 5px 10px 7px rgba(0,0,0,0.2);
+   -webkit-transform: rotate(3deg) skew(10deg);
+   -moz-transform: rotate(3deg) skew(10deg);
+   -o-transform: rotate(3deg) skew(10deg);
+   -ms-transform: rotate(3deg) skew(10deg);
+   transform: rotate(3deg) skew(10deg);
+   left: auto;
+   bottom:8px;
+   right: 15px;
+   z-index:-1;
+   visibility:visible;
+}
+.divi-hacks-module-styles .bottom-corners-shadow:not(.et_pb_image):not(.et_pb_gallery)::after, 
+.divi-hacks-module-styles .bottom-corners-shadow.et_pb_image .et_pb_image_wrap::after,
+.divi-hacks-module-styles .bottom-corners-shadow.et_pb_gallery .et_pb_gallery_item::after,
+.divi-hacks-module-styles .bottom-corners-shadow.et_pb_gallery .et_pb_gallery_items::after {
+   content: '';
+   position: absolute;
+   width: 50%;
+   height: 20%;
+   -webkit-box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   -moz-box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   -ms-box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   -o-box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   box-shadow: -5px 10px 7px rgba(0,0,0,0.2);
+   -webkit-transform: rotate(-3deg) skew(-10deg);
+   -moz-transform: rotate(-3deg) skew(-10deg);
+   -o-transform: rotate(-3deg) skew(-10deg);
+   -ms-transform: rotate(-3deg) skew(-10deg);
+   transform: rotate(-3deg) skew(-10deg);
+   right: auto;
+   bottom:8px;
+   left: 15px;
+   z-index:-1;
+   visibility:visible;
+}
+.divi-hacks-module-styles .bottom-corners-shadow.et_pb_image img, 
+.divi-hacks-module-styles .bottom-corners-shadow .et_pb_gallery_image {
+    z-index: 2;
+}

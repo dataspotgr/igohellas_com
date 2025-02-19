@@ -1,0 +1,57 @@
+
+/*************************************************/
+/********** Collapse Mobile Sub-Menus  **********/
+/*************************************************/
+
+.divi-hacks-collapse-mobile-submenus .et_mobile_menu .menu-item-has-children > a,
+.divi-hacks-collapse-mobile-submenus #main-header .et_mobile_menu .menu-item-has-children > a {
+    background-color: transparent;
+    position: relative;
+}
+.divi-hacks-collapse-mobile-submenus .et_mobile_menu .menu-item-has-children > a:after,
+.divi-hacks-collapse-mobile-submenus #main-header .et_mobile_menu .menu-item-has-children > a:after {
+    font-family: 'ETmodules';
+    text-align: center;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+}
+.divi-hacks-collapse-mobile-submenus .et_mobile_menu .menu-item-has-children > a:after,
+.divi-hacks-collapse-mobile-submenus #main-header .et_mobile_menu .menu-item-has-children > a:after {
+	font-size: 30px;
+	content: '3';
+	top: 0;
+	right: 0;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.divi-hacks-collapse-mobile-submenus .et_mobile_menu .menu-item-has-children ul.visible > a:after,
+.divi-hacks-collapse-mobile-submenus #main-header .et_mobile_menu .menu-item-has-children ul.visible > a:after {
+    content: '2';
+}
+.divi-hacks-collapse-mobile-submenus .et_mobile_menu ul.sub-menu:not(.visible),
+.divi-hacks-collapse-mobile-submenus #main-header .et_mobile_menu li ul.sub-menu:not(.visible) {
+    display:none !important;
+}
+.divi-hacks-collapse-mobile-submenus .et_mobile_menu  > ul.sub-menu.visible,
+.divi-hacks-collapse-mobile-submenus #main-header .et_mobile_menu  > ul.sub-menu.visible {
+    display:block !important;
+}
+
+.divi-hacks-collapse-mobile-submenus .et_mobile_menu .always-visitable,
+.divi-hacks-collapse-mobile-submenus #main-header .et_mobile_menu .always-visitable {
+    position: relative;
+}
+.divi-hacks-collapse-mobile-submenus .et_mobile_menu .always-visitable .hover-link,
+.divi-hacks-collapse-mobile-submenus #main-header .et_mobile_menu .always-visitable .hover-link
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 60px; /* right area continues to expand or collapse */
+}

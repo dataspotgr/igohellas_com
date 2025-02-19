@@ -1,0 +1,105 @@
+
+/*************************************************************/
+/****** Blurs the parallax background to focus on text  *******/
+/*************************************************************/
+
+.divi-hacks-blur-bg .blur1 .et_parallax_bg {
+  filter:blur(2px);
+}
+.divi-hacks-blur-bg .blur2 .et_parallax_bg {
+  filter:blur(5px);
+}
+.divi-hacks-blur-bg .blur3 .et_parallax_bg {
+  filter:blur(10px);
+}
+.divi-hacks-blur-bg .blur4 .et_parallax_bg {
+  filter:blur(25px);
+}
+.divi-hacks-blur-bg .blur5 .et_parallax_bg {
+  filter:blur(50px);
+}
+.divi-hacks-blur-bg .blur6 .et_parallax_bg {
+  filter:blur(100px);
+}
+.blur1, .blur2, .blur3, .blur4, .blur5, .blur6 {
+  overflow:hidden !important;
+  position:relative;
+}
+.blur1:not(.et_pb_section_parallax):before {
+  content:'';
+  position:absolute;
+  background-image:inherit;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:inherit;
+  background-position:inherit;
+  filter:blur(2px);
+  transform: scale(1.02);
+}
+.blur2:not(.et_pb_section_parallax):before {
+  content:'';
+  position:absolute;
+  background-image:inherit;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:inherit;
+  background-position:inherit;
+  filter:blur(5px);
+  transform: scale(1.05);
+}
+.blur3:not(.et_pb_section_parallax):before {
+  content:'';
+  position:absolute;
+  background-image:inherit;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:inherit;
+  background-position:inherit;
+  filter:blur(10px);
+  transform: scale(1.1);
+}
+.blur4:not(.et_pb_section_parallax):before {
+  content:'';
+  position:absolute;
+  background-image:inherit;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:inherit;
+  background-position:inherit;
+  filter:blur(25px);
+  transform: scale(1.2);
+}
+.blur5:not(.et_pb_section_parallax):before {
+  content:'';
+  position:absolute;
+  background-image:inherit;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:inherit;
+  background-position:inherit;
+  filter:blur(50px);
+  transform: scale(1.3);
+}
+.blur6:not(.et_pb_section_parallax):before {
+  content:'';
+  position:absolute;
+  background-image:inherit;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:inherit;
+  background-position:inherit;
+  filter:blur(100px);
+  transform: scale(1.4);
+}

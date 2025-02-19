@@ -1,0 +1,28 @@
+
+/*************************************************/
+/****** Full Width Blog Posts by default ******/
+/*************************************************/
+
+.divi-hacks-full-width-posts.single:not(.woocommerce) .dh-fullwidth-post .entry-content {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.divi-hacks-full-width-posts.single #main-content #sidebar {
+    display: none;
+}
+.divi-hacks-full-width-posts.single #main-content #left-area {
+    width: 100%;
+    padding-right: 0px !important;
+}
+.divi-hacks-full-width-posts.single:not(.woocommerce) #main-content .container:before {
+    display: none;
+}
+.divi-hacks-full-width-posts.single:not(.woocommerce) #main-content > .container {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0px !important;
+}
+.divi-hacks-full-width-posts.single:not(.woocommerce) .et_post_meta_wrapper {
+    display: none;
+}

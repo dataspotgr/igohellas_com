@@ -1,0 +1,177 @@
+
+/*************************************************************/
+/****** Enables a solid color and gradient color overlay on parallaxed backgrounds *******/
+/*************************************************************/
+
+.et_pb_section[class*="gradient-overlay"],
+.et_pb_row[class*="gradient-overlay"],
+.et_pb_column[class*="gradient-overlay"],
+.et_pb_module[class*="gradient-overlay"] {
+    overflow: hidden;
+}
+
+.divi-hacks-gradient-overlay .gradient-overlay:before {
+  content:"";
+  position:absolute;
+  z-index:1;
+  background:inherit;
+  top:0;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+.divi-hacks-gradient-overlay .gradient-overlay .et_pb_row,
+.divi-hacks-gradient-overlay .gradient-overlay .et_pb_column,
+.divi-hacks-gradient-overlay .gradient-overlay .et_pb_module,
+.divi-hacks-gradient-overlay .gradient-overlay .et_pb_promo_description,
+.divi-hacks-gradient-overlay .gradient-overlay .et_pb_button_wrapper {
+  z-index:2 !important;
+  position:relative;
+}
+
+/*************************************************************/
+/****** Reflects the gradient overlay on parallaxed backgrounds *******/
+/*************************************************************/
+
+.divi-hacks-gradient-overlay .gradient-overlay-reflect:before  {
+  content:"";
+  position:absolute;
+  z-index:1;
+  background:inherit;
+  top:0;
+  bottom:0;
+  width:100%;
+  left:0;
+}
+.divi-hacks-gradient-overlay .gradient-overlay-reflect:after  {
+  content:"";
+  position:absolute;
+  z-index:0;
+  background:inherit;
+  top:0;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 100%;
+    visibility: visible;
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.divi-hacks-gradient-overlay .gradient-overlay-reflect .et_pb_row,
+.divi-hacks-gradient-overlay .gradient-overlay-reflect .et_pb_column,
+.divi-hacks-gradient-overlay .gradient-overlay-reflect .et_pb_module,
+.divi-hacks-gradient-overlay .gradient-overlay-reflect .et_pb_promo_description,
+.divi-hacks-gradient-overlay .gradient-overlay-reflect .et_pb_button_wrapper,
+.divi-hacks-gradient-overlay .gradient-overlay-reflect {
+  z-index:2 !important;
+  position:relative;
+}
+
+/*************************************************************/
+/****** Rotates the :after gradient overlay on parallaxed backgrounds *******/
+/*************************************************************/
+
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-90:before  {
+  content:"";
+  position:absolute;
+  z-index:3;
+  background:inherit;
+  top:0;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-90:after  {
+  content: "";
+    position: absolute;
+    z-index: 3;
+    background: inherit;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    padding-top: 100%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    visibility:visible;
+}
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-90 .et_pb_row,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-90 .et_pb_column,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-90 .et_pb_module,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-90 .et_pb_promo_description,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-90 .et_pb_button_wrapper {
+  z-index:4 !important;
+}
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-180:before  {
+  content:"";
+  position:absolute;
+  z-index:3;
+  background:inherit;
+  top:0;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-180:after  {
+  content:"";
+  position:absolute;
+  z-index:3;
+  background:inherit;
+  top:0;
+  bottom:0;
+  left:0;
+  width:100%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  visibility:visible;
+}
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-180 .et_pb_row,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-180 .et_pb_column,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-180 .et_pb_module,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-180 .et_pb_promo_description,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-180 .et_pb_button_wrapper {
+  z-index:4 !important;
+}
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-270:before  {
+  content:"";
+  position:absolute;
+  z-index:9;
+  background:inherit;
+  top:0;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-270:after  {
+  content:"";
+  position:absolute;
+  z-index:9;
+  background:inherit;
+  top: -50%;
+    left: 0;
+    width: 100%;
+    padding-top: 100%;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  visibility:visible;
+}
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-270 .et_pb_row,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-270 .et_pb_column,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-270 .et_pb_module,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-270 .et_pb_promo_description,
+.divi-hacks-gradient-overlay .gradient-overlay-rotate-270 .et_pb_button_wrapper {
+  z-index:10 !important;
+}

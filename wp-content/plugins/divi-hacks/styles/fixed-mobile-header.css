@@ -1,0 +1,22 @@
+
+/**********************************/
+/****** Fixed Mobile Header *******/
+/**********************************/
+
+@media only screen and (max-width: 980px) {
+  .divi-hacks-fixed-mobile-header #main-header {
+    position:fixed !important;
+  }
+  .divi-hacks-fixed-mobile-header #main-header.et-fixed-header {
+    top: 0 !important;
+  }
+  .divi-hacks-fixed-mobile-header ul.et_mobile_menu {
+    overflow: scroll;
+    max-height: 100vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .divi-hacks-fixed-mobile-header.admin-bar.is-phone #main-header.et-fixed-header {
+    top: 0 !important;
+  }
+}

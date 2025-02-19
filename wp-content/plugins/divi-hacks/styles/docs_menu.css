@@ -1,0 +1,344 @@
+/********  Documentation Menu  ********/
+body.divi_page_divi-hacks-settings.divi-hacks-bg-effects #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="bg-effects"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-custom-svgs #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-svgs"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-custom-menus #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-menus"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-dim-controls #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="dim-controls"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-equal-height #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="equal-height"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-full-width-posts #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="full-width-posts"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-full-width-archive #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="full-width-archive"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-show-hovres-buttons #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="show-hovres-buttons"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-mobile-parallax #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="parallax-mobile"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-parallax #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="parallax"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-custom-dividers #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-dividers"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-wider-popup #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="wider-popup"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-open-links #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="open-links"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-password-protected #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="password-protected"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-custom-footer #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-footer"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-custom-tables #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-tables"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-custom-dropdowns #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-dropdowns"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-class-space #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="class-space"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-device-specific-alignment #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="device-specific-alignment"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-reveal-main-footer #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="reveal-main-footer"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-reveal-custom-footer #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="reveal-custom-footer"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-custom-tabs #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-tab-alignment"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-autohide-admin-bar #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="autohide-admin-bar"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-nav-columns #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="nav-columns"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-font-awesome-icons #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="font-awesome-icons"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-divider-shadows #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="divider-shadows"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-collapse-mobile-submenus #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="collapse-mobile-submenus"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-row-layouts #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="row-layouts"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-vb-module-hover #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="vb-module-hover"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-sticky #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="sticky"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-mobile-reverse #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="mobile-reverse"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-blurb-effects #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="blurb-effects"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-testimonial-styles #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="testimonial-styles"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-blurb-styles #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="blurb-styles"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-module-styles #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="module-styles"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-fixed-mobile-header #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="fixed-header"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-text-styles #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="text-styles"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-sidebar-shadow #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="sidebar-shadow"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-hide-show #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="hide-show"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-blog-styles #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="blog-styles"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-archive-grid #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="archive-grid"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-app-mobile-header #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="app-mobile-header"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-image-shapes #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="image-shapes"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-rss-insta #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="rss-replace-instagram"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-hover #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="hover-animations"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-shapes #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="element-shapes"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-gradient-overlay #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="gradient-overlay-parallax"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-insta-gradient #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="new-insta-gradient"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-blur-bg #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="blur-parallax-bg"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-blog-style #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="post-it-shadow"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-footer-on-bottom #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="footer-on-bottom"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-full-height #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="full-height-section"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-valign-center #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="vertical-center-row"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-instagram-filters #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="instagram-filters"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-animate-anything #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="animate-anything"]:after,
+body.divi_page_divi-hacks-settings.divi-hacks-stacked-login #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="stacked-login"]:after {
+    content: "ON";
+    position:relative;
+    left:20px;
+    border: 7px solid green;
+    font-size: 10px !important;
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    -ms-border-radius: 15px !important;
+    -o-border-radius: 15px !important;
+    border-radius: 15px !important;
+    color: #fff;
+    background: green;
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    font-weight: bold !important;
+    text-transform:uppercase !important;
+}
+body.divi_page_divi-hacks-settings:not(.divi-hacks-bg-effects) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="bg-effects"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-custom-svgs) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-svgs"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-custom-menus) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-menus"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-dim-controls) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="dim-controls"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-equal-height) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="equal-height"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-full-width-posts) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="full-width-posts"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-full-width-archive) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="full-width-archive"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-show-hovres-buttons) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="show-hovres-buttons"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-mobile-parallax) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="parallax-mobile"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-parallax) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="parallax"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-custom-dividers) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-dividers"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-wider-popup) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="wider-popup"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-open-links) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="open-links"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-password-protected) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="password-protected"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-custom-footer) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-footer"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-custom-tables) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-tables"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-custom-dropdowns) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-dropdowns"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-class-space) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="class-space"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-device-specific-alignment) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="device-specific-alignment"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-reveal-main-footer) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="reveal-main-footer"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-reveal-custom-footer) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="reveal-custom-footer"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-custom-tabs) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="custom-tabs"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-autohide-admin-bar) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="autohide-admin-bar"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-nav-columns) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="nav-columns"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-font-awesome-icons) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="font-awesome-icons"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-divider-shadows) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="divider-shadows"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-collapse-mobile-submenus) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="collapse-mobile-submenus"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-row-layouts) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="row-layouts"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-vb-module-hover) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="vb-module-hover"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-sticky) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="sticky"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-mobile-reverse) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="mobile-reverse"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-blurb-effects) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="blurb-effects"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-testimonial-styles) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="testimonial-styles"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-blurb-styles) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="blurb-styles"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-module-styles) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="module-styles"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-fixed-mobile-header) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="fixed-header"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-text-styles) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="text-styles"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-sidebar-shadow) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="sidebar-shadow"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-hide-show) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="hide-show"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-blog-styles) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="blog-styles"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-archive-grid) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="archive-grid"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-app-mobile-header) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="app-mobile-header"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-image-shapes) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="image-shapes"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-rss-insta) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="rss-replace-instagram"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-hover) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="hover-animations"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-shapes) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="element-shapes"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-gradient-overlay) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="gradient-overlay-parallax"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-insta-gradient) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="new-insta-gradient"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-blur-bg) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="blur-parallax-bg"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-blog-style) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="post-it-shadow"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-footer-on-bottom) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="footer-on-bottom"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-full-height) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="full-height-section"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-valign-center) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="vertical-center-row"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-instagram-filters) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="instagram-filters"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-animate-anything) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="animate-anything"]:after,
+body.divi_page_divi-hacks-settings:not(.divi-hacks-stacked-login) #wp-admin-bar-dh_docs a[href*="page=divi-hacks-settings"][href*="stacked-login"]:after {
+    content: "OFF";
+    position:relative;
+    left:20px;
+    border: 7px solid red;
+    font-size: 10px !important;
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    -ms-border-radius: 15px !important;
+    -o-border-radius: 15px !important;
+    border-radius: 15px !important;
+    color: #fff;
+    background: red;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    font-weight: bold !important;
+    text-transform:uppercase !important;
+}
+span.auto-on {
+    content: "AUTO ON";
+    position:relative;
+    left:20px;
+    border: 7px solid green;
+    font-size: 10px !important;
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    -ms-border-radius: 15px !important;
+    -o-border-radius: 15px !important;
+    border-radius: 15px !important;
+    color: #fff;
+    background: green;
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    font-weight: bold !important;
+    text-transform:uppercase !important;
+}
+#wp-admin-bar-dh_docs span.wp-admin-bar-arrow {
+    display: none;
+}
+.ab-item:empty {
+  display: none !important;
+}
+.hack_desc li {
+    list-style: decimal !important;
+    margin-left: 15px !important;
+}
+.dh_hack > .ab-sub-wrapper {
+  min-width: calc(100% - 700px);
+  background: #fff !important;
+  padding: 10px 20px !important;
+  box-sizing: border-box !important;
+  max-height: 85vh;
+  overflow: scroll;
+  left:0;
+  right:0;
+}
+li#wp-admin-bar-dh_docs > .ab-item, li#wp-admin-bar-dh_docs > .ab-item:hover {
+  background: #c2fc52 !important;
+  color: #000 !important;
+}
+.dh_hack > ul > table {
+  width: 100% !important;
+}
+.dh_hack {
+  color: #000;
+}
+.dh_hack input.cls {
+  font-family: monospace !important;
+  font-weight: 900 !important;
+  background:#ddd;
+  padding:3px 5px !important;
+  line-height: 1.2em !important;
+  font-size: 14px !important;
+  border: 0px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  -o-border-radius: 5px !important;
+  border-radius: 5px !important;
+  margin-bottom: 10px !important;
+  margin-right: 45px !important;
+}
+.dh_hack th {
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: -1px !important;
+  padding:0px 10px !important;
+}
+.dh_hack td {
+  padding: 10px !important;
+  vertical-align:top !important;
+}
+.dh_hack tr:first-child {
+  background:rgba(0,0,0,0.1) !important;
+}
+.dh_hack b {
+  font-weight: 900 !important;
+  line-height: 1.2em !important;
+}
+.dh_hack td.hack_cls {
+  min-width: 240px;
+}
+.dh_sticky a, .dh_hack a {
+  color: blue !important;
+  padding: 0px !important;
+  text-decoration: underline !important;
+  line-height: 1.2em !important;
+  margin-top: 5px !important;
+  display: inline-block !important;
+}
+.dh_hack tr:nth-child(odd):not(:first-child) {
+  background: rgba(0,0,0,0.05) !important;
+}
+.dh_hack td, 
+.dh_hack td > *, 
+.dh_hack td div > *, 
+.dh_hack td li > *, 
+.dh_hack td li, 
+.dh_hack td ol {
+  line-height: 1.2em !important;
+}
+.dh_hack .hack_desc p:not(:first-child) {
+  margin-top: 10px !important;
+}
+input.cls + button {
+  border: 0px;
+  padding: 3px 5px 5px 5px !important;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  line-height: 1em !important;
+  border-radius: 5px !important;
+  vertical-align: top;
+  margin-left: -43px !important;
+  cursor: pointer;
+  position: absolute !important;
+}
+input.cls + button:not(.copied) {
+  background: #fff !important;
+  font-size:14px !important;
+}
+input.cls + button.copied {
+  background: #c2fc52 !important;
+  font-size:0px !important;
+}
+button.copied:after {
+  content: 'copied' !important;
+  font-size:14px !important;
+  line-height:1.2em !important;
+}
+#wp-admin-bar-dh_docs ul.ab-submenu {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  position: unset !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
+#wp-admin-bar-dh_docs ul.ab-submenu:not(#wp-admin-bar-dh_docs-default) {
+  padding-bottom: 0px !important;
+}
+#wp-admin-bar-dh_docs li.hover>.ab-sub-wrapper, 
+#wp-admin-bar-dh_docs li:hover>.ab-sub-wrapper {
+  margin-left: 0px !important;
+  margin-top: 5px !important;
+}
+ul#wp-admin-bar-dh_docs-default,
+ul#wp-admin-bar-dh_docs-default .ab-submenu {
+    padding: 0px !important;
+}
+ul#wp-admin-bar-dh_docs-default li {
+    padding: 5px 0px;
+}
+.dh_sticky {
+  position: -webkit-sticky !important;
+  position: -moz-sticky !important;
+  position: -ms-sticky !important;
+  position: -o-sticky !important;
+  position: sticky !important;
+  top: 15px;
+}
+li#wp-admin-bar-dh_docs,
+.dh_hack,
+.dh_category {
+  position: unset !important;
+}
+.dh_category > .ab-sub-wrapper {
+  min-width: 100% !important;
+  left: 0;
+}
+#wp-admin-bar-dh_docs > .ab-sub-wrapper {
+  min-width: 75% !important;
+  max-width: 75% !important;
+}
+.dh_category .ab-item.ab-empty-item {
+  min-width: unset !important;
+  padding-right: 10px !important;
+  height: 100% !important;
+  white-space: normal !important;
+}
+li.menupop.dh_category:hover,
+li.menupop.dh_hack:hover {
+  background:#fff !important;
+}
+li:hover > .ab-item.ab-empty-item {
+  color:#000 !important;
+}
+.dh_category .ab-item:before, 
+.dh_hack .ab-item:before {
+  display: none !important;
+}
+.dh_sticky p {
+    line-height: 1.2em !important;
+}

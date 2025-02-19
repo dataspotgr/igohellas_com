@@ -1,0 +1,7 @@
+
+/*************************************************/
+/****************** Custom Reveals ******************/
+/*************************************************/
+
+[class*="reveal-trigger-"].closed:after { content:"\33"; }
+[class*="reveal-trigger-"].opened:after { content:"\32"; }

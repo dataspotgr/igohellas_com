@@ -1,0 +1,26 @@
+
+/*************************************************/
+/****************** Reveal Footer ****************/
+/*************************************************/
+
+body.is-desktop.divi-hacks-reveal-main-footer:not(.divi-hacks-reveal-custom-footer):not(.et-fb) #main-footer,
+body.is-desktop.divi-hacks-reveal-main-footer.divi-hacks-reveal-custom-footer:not(.et-fb) #main-footer,
+body.is-desktop.divi-hacks-reveal-custom-footer:not(.divi-hacks-reveal-main-footer):not(.et-fb) .reveal-footer,
+body.is-desktop.divi-hacks-reveal-main-footer.divi-hacks-reveal-custom-footer:not(.et-fb) .reveal-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  max-height:100vh;
+  overflow-y:auto;
+}
+body.is-desktop.divi-hacks-reveal-custom-footer:not(.et-fb) .et_pb_section:not(.reveal-footer):not([class*="sticky-"]):not(.exit-popup), body.is-desktop.divi-hacks-reveal-main-footer:not(.et-fb) #main-content {
+  z-index:1;
+  position:relative;
+  background-color: #fff;
+}
+body.is-desktop.divi-hacks-reveal-main-footer #main-content,
+body.is-desktop.divi-hacks-reveal-custom-footer #main-content {
+    min-height: 100vh !important;
+}

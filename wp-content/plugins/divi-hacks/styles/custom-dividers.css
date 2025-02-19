@@ -1,0 +1,87 @@
+
+/*****************************************************/
+/*  Add shape dividers to any row, column, or module */
+/*****************************************************/
+.divi-hacks-custom-dividers [class*="ontop"] svg, 
+.divi-hacks-custom-dividers [class*="onbottom"] svg {
+    position: inherit;
+    left: 0;
+}
+.divi-hacks-custom-dividers [class^="dh-top-divider"] {
+    position: absolute;
+    bottom: var(--top-divider-bottom, 100%);
+    width: var(--top-divider-width, 100%);
+    height: var(--top-divider-height, 100px);
+    margin: var(--top-divider-margin, 0 auto);
+    align-self:center;
+}
+.divi-hacks-custom-dividers [class^="dh-bottom-divider"] {
+    position: absolute;
+    top: 100%;
+    width: var(--bottom-divider-width, 100%);
+    height: var(--bottom-divider-height, 100px);
+    margin: var(--bottom-divider-margin, 0 auto);
+    align-self:center;
+}
+.divi-hacks-custom-dividers [class*="ontop"], 
+.divi-hacks-custom-dividers [class*="onbottom"] {
+  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    justify-content: center;
+    position:relative;
+}
+.divi-hacks-custom-dividers .et_pb_section[class*="ontop"], 
+.divi-hacks-custom-dividers .et_pb_section[class*="onbottom"],
+.divi-hacks-custom-dividers .et_pb_column[class*="ontop"], 
+.divi-hacks-custom-dividers .et_pb_column[class*="onbottom"] {
+  flex-direction:column;
+}
+.divi-hacks-custom-dividers .top-flip-x > [class^="dh-top-divider"],
+.divi-hacks-custom-dividers .bottom-flip-x > [class^="dh-bottom-divider"] {
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.divi-hacks-custom-dividers .top-flip-y > [class^="dh-top-divider"],
+.divi-hacks-custom-dividers .bottom-flip-y > [class^="dh-bottom-divider"] {
+    -moz-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+.divi-hacks-custom-dividers .top-flip-xy > [class^="dh-bottom-divider"],
+.divi-hacks-custom-dividers .bottom-flip-xy > [class^="dh-bottom-divider"] {
+  -moz-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+.divi-hacks-custom-dividers [class^="dh-top-divider"][class*="zigzag"],
+.divi-hacks-custom-dividers [class^="dh-top-divider"][class*="castle"],
+.divi-hacks-custom-dividers [class^="dh-top-divider"][class*="points"],
+.divi-hacks-custom-dividers [class^="dh-top-divider"][class*="bumps"] {
+  height: var(--top-divider-height, 40px);
+}
+.divi-hacks-custom-dividers [class^="dh-top-divider"][class*="corners"] {
+  height: var(--top-divider-height, 80px);
+}
+.divi-hacks-custom-dividers [class^="dh-bottom-divider"][class*="zigzag"],
+.divi-hacks-custom-dividers [class^="dh-bottom-divider"][class*="castle"],
+.divi-hacks-custom-dividers [class^="dh-bottom-divider"][class*="points"],
+.divi-hacks-custom-dividers [class^="dh-bottom-divider"][class*="bumps"] {
+  height: var(--bottom-divider-height, 40px);
+}
+.divi-hacks-custom-dividers [class^="dh-bottom-divider"][class*="corners"] {
+  height: var(--bottom-divider-height, 80px);
+}

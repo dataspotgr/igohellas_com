@@ -1,0 +1,266 @@
+{
+	"name": "dipi/lottie-icon",
+	"d4Shortcode": "dipi_lottie_icon",
+	"title": "Pixel Lottie Icon",
+	"titles": "Pixel Lottie Icons",
+	"category": "module",
+	"attributes": {
+		"module": {
+			"type": "object",
+			"selector": "{{selector}}",
+			"default": {
+				"meta": {
+					"adminLabel": {
+						"desktop": {
+							"value": "Pixel Lottie Icon"
+						}
+					}
+				}
+			}
+		},
+		"json_file": {
+			"type": "object",
+			"childrenSanitizer": "et_core_esc_previously"
+		},
+		"title": {
+			"type": "object",
+			"selector": "{{selector}} .dipi-lottie-title",
+			"default": {
+				"decoration": {
+					"font": {
+						"font": {
+							"desktop": {
+								"value": {
+									"headingLevel": "h2"
+								}
+							}
+						}
+					}
+				}
+			},
+			"inlineEditor": "plainText",
+			"elementType": "heading",
+			"childrenSanitizer": "et_core_esc_previously",
+			"attributes": {
+				"class": "dipi-lottie-title"
+			}
+		},
+		"content": {
+			"type": "object",
+			"selector": "{{selector}} .dipi-lottie-desc",
+			"tagName": "div",
+			"attributes": {
+				"class": "dipi-lottie-desc"
+			},
+			"inlineEditor": "richText",
+			"childrenSanitizer": "et_core_esc_previously",
+			"styleProps": {
+				"bodyFont": {
+					"selectors": {
+						"desktop": {
+							"value": "{{selector}} .dipi-lottie-desc"
+						}
+					}
+				}
+			}
+		},
+		"button": {
+			"type": "object",
+			"default": {
+				"advanced": {
+					"use_button": {
+						"desktop": {
+							"value": "off"
+						}
+					},
+					"button_text": {
+						"desktop": {
+							"value": "Divi Pixel"
+						}
+					},
+					"button_link": {
+						"desktop": {
+							"value": "https://www.divi-pixel.com"
+						}
+					},
+					"button_link_target": {
+						"desktop": {
+							"value": "same_window"
+						}
+					}
+				}
+			}
+		},
+		"use_animate_on_scroll": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "off"
+					}
+				}
+			}
+		},
+		"viewport_start": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "0"
+					}
+				}
+			}
+		},
+		"viewport_end": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "100"
+					}
+				}
+			}
+		},
+		"frame_start": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "0"
+					}
+				}
+			}
+		},
+		"frame_end": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "100"
+					}
+				}
+			}
+		},
+		"loop": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "on"
+					}
+				}
+			}
+		},
+		"autoplay": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "on"
+					}
+				}
+			}
+		},
+		"autoplay_start_delay": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "0"
+					}
+				}
+			}
+		},
+		"autoplay_start_function": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "autostart"
+					}
+				}
+			}
+		},
+		"autplay_viewport_offset": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "75"
+					}
+				}
+			}
+		},
+		"start_frame": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "0"
+					}
+				}
+			}
+		},
+		"play_on_hover": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "on"
+					}
+				}
+			}
+		},
+		"stop_on_hover": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "on"
+					}
+				}
+			}
+		},
+		"speed": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "100"
+					}
+				}
+			}
+		},
+		"direction": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "normal"
+					}
+				}
+			}
+		},
+		"lottie_alignment": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "center"
+					}
+				}
+			}
+		},
+		"lottie_width": {
+			"type": "object",
+			"default": {
+				"innerContent": {
+					"desktop": {
+						"value": "100"
+					}
+				}
+			}
+		}
+	},
+	"customCssFields": {}
+}

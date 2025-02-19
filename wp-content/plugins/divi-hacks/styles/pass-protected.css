@@ -1,0 +1,18 @@
+
+/*************************************************/
+/***  Better Password Protected Login Screen   ***/
+/*************************************************/
+
+.divi-hacks-password-protected .post-password-required .et_password_protected_form {
+  width:100%;
+  max-width:500px;
+  margin:0 auto;
+  padding:0 20px;
+  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

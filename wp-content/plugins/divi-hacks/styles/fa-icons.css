@@ -1,0 +1,88 @@
+
+/*************************************************/
+/************** Font Awesome Icons **************/
+/*************************************************/
+
+.divi-hacks-font-awesome-icons li.fas > a:before, 
+.divi-hacks-font-awesome-icons li.far > a:before,
+.divi-hacks-font-awesome-icons li.fab > a:before,
+.divi-hacks-font-awesome-icons li.fal > a:before,
+.divi-hacks-font-awesome-icons li.fa > a:before {
+    margin-right:10px;
+}
+.divi-hacks-font-awesome-icons:not(.et_vertical_nav) ul.nav > li.fas:not(.module-in-menu) a, 
+.divi-hacks-font-awesome-icons:not(.et_vertical_nav) ul.nav > li.far:not(.module-in-menu) a,
+.divi-hacks-font-awesome-icons:not(.et_vertical_nav) ul.nav > li.fab:not(.module-in-menu) a,
+.divi-hacks-font-awesome-icons:not(.et_vertical_nav) ul.nav > li.fal:not(.module-in-menu) a,
+.divi-hacks-font-awesome-icons:not(.et_vertical_nav) ul.nav > li.fa:not(.module-in-menu) a {
+    display: inline-flex !important;
+    align-items: center;
+}
+.divi-hacks-font-awesome-icons ul.menu > li.fas:not(.module-in-menu) > a, 
+.divi-hacks-font-awesome-icons ul.menu > li.far:not(.module-in-menu) > a,
+.divi-hacks-font-awesome-icons ul.menu > li.fab:not(.module-in-menu) > a,
+.divi-hacks-font-awesome-icons ul.menu > li.fal:not(.module-in-menu) > a,
+.divi-hacks-font-awesome-icons ul.menu > li.fa:not(.module-in-menu) > a {
+    display: inline-flex !important;
+    align-items: center;
+}
+.divi-hacks-font-awesome-icons #et-secondary-nav li.fas.menu-item-has-children:not(.module-in-menu) > a:first-child:after,
+.divi-hacks-font-awesome-icons #et-secondary-nav li.far.menu-item-has-children:not(.module-in-menu) > a:first-child:after,
+.divi-hacks-font-awesome-icons #et-secondary-nav li.fal.menu-item-has-children:not(.module-in-menu) > a:first-child:after,
+.divi-hacks-font-awesome-icons #et-secondary-nav li.fab.menu-item-has-children:not(.module-in-menu) > a:first-child:after,
+.divi-hacks-font-awesome-icons #et-secondary-nav li.fa.menu-item-has-children:not(.module-in-menu) > a:first-child:after {
+    top:unset;
+}
+.divi-hacks-font-awesome-icons ul.nav > li.fas:not(.module-in-menu) > ul, 
+.divi-hacks-font-awesome-icons ul.nav > li.far:not(.module-in-menu) > ul,
+.divi-hacks-font-awesome-icons ul.nav > li.fab:not(.module-in-menu) > ul,
+.divi-hacks-font-awesome-icons ul.nav > li.fal:not(.module-in-menu) > ul,
+.divi-hacks-font-awesome-icons ul.nav > li.fa:not(.module-in-menu) > ul {
+  top:100%;
+}
+.divi-hacks-font-awesome-icons li.fas.current_page_item:not(.module-in-menu) a:before,
+.divi-hacks-font-awesome-icons li.fas.current-menu-item:not(.module-in-menu) a:before,
+.divi-hacks-font-awesome-icons li.far.current_page_item:not(.module-in-menu) a:before,
+.divi-hacks-font-awesome-icons li.far.current-menu-item:not(.module-in-menu) a:before,
+.divi-hacks-font-awesome-icons li.fab.current_page_item:not(.module-in-menu) a:before,
+.divi-hacks-font-awesome-icons li.fab.current-menu-item:not(.module-in-menu) a:before,
+.divi-hacks-font-awesome-icons li.fal.current_page_item:not(.module-in-menu) a:before,
+.divi-hacks-font-awesome-icons li.fal.current-menu-item:not(.module-in-menu) a:before,
+.divi-hacks-font-awesome-icons li.fa.current_page_item:not(.module-in-menu) a:before,
+.divi-hacks-font-awesome-icons li.fa.current-menu-item:not(.module-in-menu) a:before {
+    color: inherit;
+}
+
+.divi-hacks-font-awesome-icons #et-secondary-nav > li:not(.et-reverse-direction-nav) > ul > li > a:after,
+.divi-hacks-font-awesome-icons #top-menu > li.et-reverse-direction-nav > ul > li > a:after {
+    transform: rotate(90deg);
+}
+.divi-hacks-font-awesome-icons #et-secondary-nav > li.et-reverse-direction-nav > ul > li > a:after,
+.divi-hacks-font-awesome-icons #top-menu > li:not(.et-reverse-direction-nav) > ul > li > a:after {
+    transform: rotate(-90deg);
+}
+.divi-hacks-font-awesome-icons #page-container #et-boc .bottom-nav:not(.module-in-menu) a {
+    display: inline-flex;
+    align-items: center;
+}
+.divi-hacks-font-awesome-icons #page-container #et-boc .fa-blurb::before,
+.divi-hacks-font-awesome-icons #page-container #et-boc .fa-icon-list::before { 
+    display:none; 
+}
+.divi-hacks-font-awesome-icons #page-container #et-boc .fa-button .et_pb_button {
+    display: inline-flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.divi-hacks-font-awesome-icons #page-container #et-boc .fa-button .et_pb_button:after,
+.divi-hacks-font-awesome-icons #page-container #et-boc .fa-button .et_pb_button:before {
+    position:relative;
+    align-self: center;
+}
+.divi-hacks-font-awesome-icons #page-container #et-boc .fa-button .et_pb_button:hover:before {
+    margin-left:-.5em;
+}
+.divi-hacks-font-awesome-icons #page-container #et-boc .fa-button .et_pb_button:hover:after {
+    margin-right:-.5em;
+}

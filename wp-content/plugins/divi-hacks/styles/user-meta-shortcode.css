@@ -1,0 +1,18 @@
+
+/***********************************/
+/****** User Meta Shortcodes ******/
+/***********************************/
+
+.get_avatar.circle img { 
+  -moz-border-radius: 50%; 
+  -webkit-border-radius: 50%; 
+  -o-border-radius: 50%; 
+  -ms-border-radius: 50%; 
+  overflow:hidden;  
+  border-radius: 50%;
+}
+.get_avatar { 
+  max-width: fit-content; 
+  max-height: fit-content; 
+  line-height: 0; 
+}

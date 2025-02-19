@@ -1,0 +1,31 @@
+
+/**********************************/
+/****** Adds extra links to admin bar menu *******/
+/**********************************/
+
+#wp-admin-bar-themeoptions, #wp-admin-bar-divi-hacks {
+    display: block;
+}
+#wp-admin-bar-edit-backend.edit-backend a {
+    background: transparent !important;
+}
+#wp-admin-bar-edit-backend.edit-backend a:before {
+    display:none;
+}
+.is-phone #wp-admin-bar-et-use-visual-builder.edit-visual {
+    display: block;
+    position: static;
+}
+.is-phone #wp-admin-bar-et-use-visual-builder.edit-visual > a {
+    font-size:0px;
+}
+.is-phone #wp-admin-bar-et-use-visual-builder.edit-visual > a:before {
+    font-size:50px !important;
+    width:100%;
+    color:#fff !important;
+}
+@media only screen and (min-width:783px) {
+  #wp-admin-bar-be-edit, #wp-admin-bar-vb-edit {
+    display:none;
+  }
+}

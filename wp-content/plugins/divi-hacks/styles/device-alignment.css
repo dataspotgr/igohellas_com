@@ -1,0 +1,319 @@
+
+/*** Device-specific Row, Module, and Text Alignment ***/
+
+  /** Tabs on Bottom Correction **/
+  .divi-hacks-device-specific-alignment .tablet-module-align-left.tabs-on-bottom,
+  .divi-hacks-device-specific-alignment .tablet-module-align-center.tabs-on-bottom,
+  .divi-hacks-device-specific-alignment .tablet-module-align-right.tabs-on-bottom,
+  .divi-hacks-device-specific-alignment .phone-module-align-left.tabs-on-bottom,
+  .divi-hacks-device-specific-alignment .phone-module-align-center.tabs-on-bottom,
+  .divi-hacks-device-specific-alignment .phone-module-align-right.tabs-on-bottom {
+    flex-direction:column-reverse !important;
+  }
+  
+  /** Phone - Button Align - Left **/
+  .divi-hacks-device-specific-alignment.is-phone .phone-text-align-left.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-text-align-left.et_pb_fullwidth_header .et_pb_button {
+    width: max-content;
+    margin-left:0;
+    margin-right:auto;
+  }
+
+  /** Phone - Button Align - Center **/
+  .divi-hacks-device-specific-alignment.is-phone .phone-text-align-center.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-text-align-center.et_pb_fullwidth_header .et_pb_button,
+  .divi-hacks-device-specific-alignment.is-phone .phone-module-align-center.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-module-align-center.et_pb_fullwidth_header .et_pb_button,
+  .divi-hacks-device-specific-alignment.is-phone .phone-row-align-center.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-row-align-center.et_pb_fullwidth_header .et_pb_button {
+    width: max-content;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  /** Phone - Button Align - Right **/
+  .divi-hacks-device-specific-alignment.is-phone .phone-text-align-right.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-text-align-right.et_pb_fullwidth_header .et_pb_button {
+    width: max-content;
+    margin-left:auto;
+    margin-right:0;
+  }
+
+  /** Tablet - Button Align - Left **/
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-text-align-left.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-text-align-left.et_pb_fullwidth_header .et_pb_button {
+    width: max-content;
+    margin-left:0;
+    margin-right:auto;
+  }
+
+  /** Tablet - Button Align - Center **/
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-text-align-center.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-text-align-center.et_pb_fullwidth_header .et_pb_button,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-module-align-center.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-module-align-center.et_pb_fullwidth_header .et_pb_button,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-row-align-center.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-row-align-center.et_pb_fullwidth_header .et_pb_button {
+    width: max-content;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  /** Tablet - Button Align - Right **/
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-text-align-right.et_pb_fullwidth_header .et_pb_button,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-text-align-right.et_pb_fullwidth_header .et_pb_button {
+    width: max-content;
+    margin-left:auto;
+    margin-right:0;
+  }
+
+  /** Phone - Text Align - Left **/
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-text-align-left,
+  .divi-hacks-device-specific-alignment.is-phone .phone-text-align-left,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .phone-text-align-left.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .phone-text-align-left.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .phone-text-align-left div:not(.et-pb-controllers),
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .phone-text-align-left div:not(.et-pb-controllers) {
+    text-align:left;
+  }
+
+  /** Phone - Text Align - Center **/
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-text-align-center,
+  .divi-hacks-device-specific-alignment.is-phone .phone-text-align-center,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .phone-text-align-center.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .phone-text-align-center.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .phone-text-align-center div:not(.et-pb-controllers),
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .phone-text-align-center div:not(.et-pb-controllers) {
+    text-align:center;
+  }
+
+  /** Phone - Text Align - Right **/
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-text-align-right,
+  .divi-hacks-device-specific-alignment.is-phone .phone-text-align-right,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .phone-text-align-right.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .phone-text-align-right.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .phone-text-align-right div:not(.et-pb-controllers),
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .phone-text-align-right div:not(.et-pb-controllers) {
+    text-align:right;
+  }
+
+  /** Phone - Module Align - Left **/
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_section:not(.et_pb_fullwidth_section) .phone-module-align-left,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_section:not(.et_pb_fullwidth_section) .phone-module-align-left {
+    display:flex;
+    flex-direction:column;
+    width:max-content;
+  }
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-module-align-left,
+  .divi-hacks-device-specific-alignment.is-phone .phone-module-align-left.et_pb_module,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .phone-module-align-left.et_pb_post_title,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .phone-module-align-left.et_pb_post_title {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .phone-module-align-left.et_pb_fullwidth_header .header-content,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .phone-module-align-left.et_pb_fullwidth_header .header-content {
+    margin-left: 6% !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+
+  /** Phone - Module Align - Center **/
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_section:not(.et_pb_fullwidth_section) .phone-module-align-center,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_section:not(.et_pb_fullwidth_section) .phone-module-align-center {
+    display:flex;
+    flex-direction:column;
+    width:max-content;
+  }
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-module-align-center,
+  .divi-hacks-device-specific-alignment.is-phone .phone-module-align-center.et_pb_module,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .phone-module-align-center.et_pb_fullwidth_header .header-content,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .phone-module-align-center.et_pb_fullwidth_header .header-content,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .phone-module-align-center.et_pb_post_title,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .phone-module-align-center.et_pb_post_title {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+
+  /** Phone - Module Align - Right **/
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_section:not(.et_pb_fullwidth_section) .phone-module-align-right,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_section:not(.et_pb_fullwidth_section) .phone-module-align-right {
+    display:flex;
+    flex-direction:column;
+    width:max-content;
+  }
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-module-align-right,
+  .divi-hacks-device-specific-alignment.is-phone .phone-module-align-right.et_pb_module,
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .phone-module-align-right.et_pb_post_title,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .phone-module-align-right.et_pb_post_title {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    float: unset;
+  }
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .phone-module-align-right.et_pb_fullwidth_header .header-content,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .phone-module-align-right.et_pb_fullwidth_header .header-content {
+    margin-left: auto !important;
+    margin-right: 6% !important;
+    float: unset;
+  }
+
+  /** Phone - Row Align - Left **/
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-row-align-left,
+  .divi-hacks-device-specific-alignment.is-phone .phone-row-align-left {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+
+  /** Phone - Row Align - Center **/
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-row-align-center,
+  .divi-hacks-device-specific-alignment.is-phone .phone-row-align-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+
+  /** Phone - Row Align - Right **/
+  html.et-fb-preview--phone .divi-hacks-device-specific-alignment .phone-row-align-right,
+  .divi-hacks-device-specific-alignment.is-phone .phone-row-align-right {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    float: unset;
+  }
+
+  /** Tablet - Text Align - Left **/
+  .et_fb_preview_active--responsive_preview .et_pb_slide_description {
+    text-align: initial;
+  }
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-text-align-left,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-text-align-left,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .tablet-text-align-left.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  .divi-hacks-device-specific-alignment.is-tablet .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .tablet-text-align-left.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .tablet-text-align-left div:not(.et-pb-controllers),
+  .divi-hacks-device-specific-alignment.is-tablet .et_pb_fullwidth_section .tablet-text-align-left div:not(.et-pb-controllers) {
+    text-align:left;
+  }
+
+
+  /** Tablet - Text Align - Center **/
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-text-align-center,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-text-align-center,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .tablet-text-align-center.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  .divi-hacks-device-specific-alignment.is-tablet .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .tablet-text-align-center.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .tablet-text-align-center div:not(.et-pb-controllers),
+  .divi-hacks-device-specific-alignment.is-tablet .et_pb_fullwidth_section .tablet-text-align-center div:not(.et-pb-controllers) {
+    text-align:center;
+  }
+
+  /** Tablet - Text Align - Right **/
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-text-align-right,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-text-align-right,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .tablet-text-align-right.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  .divi-hacks-device-specific-alignment.is-tablet .et_pb_fullwidth_section div[class^="et_pb_fullwidth_slider"] .tablet-text-align-right.et_pb_slider .et_pb_slide .et_pb_slide_description,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .tablet-text-align-right div:not(.et-pb-controllers),
+  .divi-hacks-device-specific-alignment.is-tablet .et_pb_fullwidth_section .tablet-text-align-right div:not(.et-pb-controllers) {
+    text-align:right;
+  }
+
+  /** Tablet - Module Align - Left **/
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_section:not(.et_pb_fullwidth_section) .tablet-module-align-left,
+  .divi-hacks-device-specific-alignment.is-tablet .et_pb_section:not(.et_pb_fullwidth_section) .tablet-module-align-left {
+    display:flex;
+    flex-direction:column;
+    width:max-content;
+  }
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-module-align-left.et_pb_module,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-module-align-left.et_pb_module,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .tablet-module-align-left.et_pb_post_title,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .tablet-module-align-left.et_pb_post_title {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .tablet-module-align-left.et_pb_fullwidth_header .header-content,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .tablet-module-align-left.et_pb_fullwidth_header .header-content {
+    margin-left: 6% !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+
+  /** Tablet - Module Align - Center **/
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_section:not(.et_pb_fullwidth_section) .tablet-module-align-center,
+  .divi-hacks-device-specific-alignment.is-tablet .et_pb_section:not(.et_pb_fullwidth_section) .tablet-module-align-center {
+    display:flex;
+    flex-direction:column;
+    width:max-content;
+  }
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-module-align-center,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-module-align-center.et_pb_module,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .tablet-module-align-center.et_pb_fullwidth_header .header-content,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .tablet-module-align-center.et_pb_fullwidth_header .header-content,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .tablet-module-align-center.et_pb_post_title,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .tablet-module-align-center.et_pb_post_title {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+
+  /** Tablet - Module Align - Right **/
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_section:not(.et_pb_fullwidth_section) .tablet-module-align-right,
+  .divi-hacks-device-specific-alignment.is-tablet .et_pb_section:not(.et_pb_fullwidth_section) .tablet-module-align-right {
+    display:flex;
+    flex-direction:column;
+    width:max-content;
+  }
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-module-align-right,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-module-align-right.et_pb_module,
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .tablet-module-align-right.et_pb_post_title,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .tablet-module-align-right.et_pb_post_title {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    float: unset;
+  }
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .et_pb_fullwidth_section .tablet-module-align-right.et_pb_fullwidth_header .header-content,
+  .divi-hacks-device-specific-alignment.is-phone .et_pb_fullwidth_section .tablet-module-align-right.et_pb_fullwidth_header .header-content {
+    margin-left: auto !important;
+    margin-right: 6% !important;
+    float: unset;
+  }
+
+  /** Tablet - Row Align - Left **/
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-row-align-left,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-row-align-left {
+    display:flex;
+    flex-direction:column;
+  }
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-row-align-left,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-row-align-left {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+
+  /** Tablet - Row Align - Center **/
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-row-align-center,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-row-align-center {
+    display:flex;
+    flex-direction:column;
+  }
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-row-align-center,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-row-align-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: unset;
+  }
+
+  /** Tablet - Row Align - Right **/
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-row-align-right,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-row-align-right {
+    display:flex;
+    flex-direction:column;
+  }
+  html.et-fb-preview--tablet .divi-hacks-device-specific-alignment .tablet-row-align-right,
+  .divi-hacks-device-specific-alignment.is-tablet .tablet-row-align-right {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    float: unset;
+  }

@@ -1,0 +1,217 @@
+
+/*************************************************/
+/****************** Custom Menus ******************/
+/*************************************************/
+
+.divi-hacks-custom-menus #et-boc:not(.mfp-wrap) .et_pb_row:hover {
+    z-index: 11 !important;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-left_aligned .et_pb_menu_inner_container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.is-mobile.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered .et_pb_menu_inner_container, 
+.is-mobile.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-inline_centered_logo .et_pb_menu_inner_container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et_pb_menu__menu>nav, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et_pb_menu__menu>nav {
+    height: 100%;
+}
+.divi-hacks-custom-menus.is-desktop #et-boc .custom-menu.et_pb_menu--style-centered .et_pb_menu__wrap {
+    background:var(--menu-container-background);
+}
+.divi-hacks-custom-menus.is-desktop #et-boc .custom-menu.et_pb_menu--style-centered .et_pb_menu__menu {
+    width:var(--menu-width);
+    max-width:var(--menu-max-width) !important;
+    margin:0 auto;
+}
+.divi-hacks-custom-menus #et-boc .et-l .custom-menu .et_pb_row {
+    width: inherit;
+}
+.divi-hacks-custom-menus #et-boc .et-l .custom-menu .et_pb_menu__wrap {
+    margin:0;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu .et_pb_menu_inner_container {
+    height: inherit;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered .et_pb_menu_inner_container,
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-inline_centered_logo .et_pb_menu_inner_container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-inline_centered_logo .et_pb_menu__logo-wrap {
+    margin-bottom: 0px;
+}
+.divi-hacks-custom-menus.is-mobile #et-boc .custom-menu.et_pb_fullwidth_menu--style-inline_centered_logo .et_pb_menu__wrap, 
+.divi-hacks-custom-menus.is-mobile #et-boc .custom-menu.et_pb_menu--style-inline_centered_logo .et_pb_menu__wrap,
+.divi-hacks-custom-menus.is-mobile #et-boc .custom-menu.et_pb_fullwidth_menu--style-centered .et_pb_menu__wrap, 
+.divi-hacks-custom-menus.is-mobile #et-boc .custom-menu.et_pb_menu--style-centered .et_pb_menu__wrap {
+    justify-content: flex-end;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered .et_pb_menu__logo,
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered .et_pb_menu__logo img {
+    margin: unset !important;
+}
+@media only screen and ( min-width:981px ) {
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered.align-left .et_pb_menu__logo,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-centered.align-left .et_pb_menu__logo,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered.align-right .et_pb_menu__logo,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-centered.align-right .et_pb_menu__logo {
+        margin: unset !important;
+    }
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered .et_pb_menu__logo,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered .et_pb_menu__menu,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-centered .et_pb_menu__logo,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-centered .et_pb_menu__menu {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered.align-left .et_pb_menu__logo-wrap,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered.align-left .et_pb_menu__wrap,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-centered.align-left .et_pb_menu__logo-wrap,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-centered.align-left .et_pb_menu__wrap {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered.align-right .et_pb_menu__logo-wrap,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-centered.align-right .et_pb_menu__wrap,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-centered.align-right .et_pb_menu__logo-wrap,
+    .divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-centered.align-right .et_pb_menu__wrap {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+.divi-hacks-custom-menus #et-boc .custom-menu .et_pb_menu__menu {
+    height: 100%;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et-menu > li, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et-menu > li,
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et-menu .sub-menu li, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et-menu .sub-menu li {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et-menu > li a::before, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et-menu > li a::before,
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et-menu .sub-menu li a::before, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et-menu .sub-menu li a::before {
+    color:inherit !important;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu .et-menu li li a,
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et-menu > li ul li, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et-menu > li ul li {
+    width:100%;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et-menu > li:not(.nav-columns) > a, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et-menu > li:not(.nav-columns) > a,
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et-menu .sub-menu > div:not(.mim) a, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et-menu .sub-menu > div:not(.mim) a {
+    width:100% !important;
+    height: 100% !important;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    box-sizing:border-box;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu li:not(.nav-columns) .et-menu .sub-menu li a, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu li:not(.nav-columns) .et-menu .sub-menu li a {
+    width:100% !important;
+    height: 100% !important;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    box-sizing:border-box;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu .et-l .nav li ul {
+    border-top: var(--submenu-border-top, 3px solid);
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et_pb_menu__menu>nav>ul, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et_pb_menu__menu>nav>ul {
+    padding: 0px !important;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et_pb_menu__menu>nav>ul>li, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et_pb_menu__menu>nav>ul>li {
+    margin-top:0px;
+    height: 100%;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-left_aligned .et_pb_menu_inner_container, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu--style-left_aligned .et_pb_row, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-left_aligned .et_pb_menu_inner_container, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu--style-left_aligned .et_pb_row {
+    height: 100%;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_fullwidth_menu .et_pb_menu__menu>nav>ul>li>a, 
+.divi-hacks-custom-menus #et-boc .custom-menu.et_pb_menu .et_pb_menu__menu>nav>ul>li>a {
+    padding-bottom:0px;
+    padding-top:0px;
+    padding-left: 10px;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+.divi-hacks-custom-menus #et-boc .custom-menu .et-menu .menu-item-has-children>a:first-child:after {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}

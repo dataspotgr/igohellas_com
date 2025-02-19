@@ -1,0 +1,198 @@
+
+/*************************************************************/
+/****** App style mobile header for Menu Module Centered Inline Logo Header Style *******/
+/*************************************************************/
+
+  .is-mobile.divi-hacks-app-mobile-header .et_pb_fullwidth_menu--style-inline_centered_logo .et_pb_menu__wrap, 
+  .is-mobile.divi-hacks-app-mobile-header .et_pb_menu--style-inline_centered_logo .et_pb_menu__wrap,
+  .is-mobile.divi-hacks-app-mobile-header .et_pb_fullwidth_menu--style-centered .et_pb_menu__wrap, 
+  .is-mobile.divi-hacks-app-mobile-header .et_pb_menu--style-centered .et_pb_menu__wrap {
+    justify-content: flex-end !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header .et_pb_fullwidth_menu--style-inline_centered_logo .et_pb_menu_inner_container>.et_pb_menu__logo-wrap, 
+  .is-mobile.divi-hacks-app-mobile-header .et_pb_fullwidth_menu--style-inline_centered_logo .et_pb_row>.et_pb_menu__logo-wrap, 
+  .is-mobile.divi-hacks-app-mobile-header .et_pb_menu--style-inline_centered_logo .et_pb_menu_inner_container>.et_pb_menu__logo-wrap, 
+  .is-mobile.divi-hacks-app-mobile-header .et_pb_menu--style-inline_centered_logo .et_pb_row>.et_pb_menu__logo-wrap {
+    margin: 0 !important;
+  }
+
+/*************************************************************/
+/******** App style mobile header for Default Style ***********/
+/**************************************************************/
+
+  .is-mobile.divi-hacks-app-mobile-header span.mobile_menu_bar.mobile_menu_bar_toggle {
+    margin-top: 15px;
+    padding-bottom:8px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left #main-header .et_menu_container {
+    width: 95%;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left img#logo {
+    max-height: 80% !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left header#main-header .container, 
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left header#main-header, 
+  .is-mobile.divi-hacks-mobile-header #et-top-navigation {
+    height: 50px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left .et_header_style_left #et-top-navigation, 
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left .et_header_style_left .et-fixed-header #et-top-navigation {
+    padding-top: 8px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left #et_top_search {
+    margin-top: 0;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left #et_mobile_nav_menu {
+    margin-top: -14px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left #et_top_search {
+    margin-right: 15px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left:not(.et_header_style_fullscreen) .et_mobile_menu {
+    padding: 0;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left .et_header_style_left .mobile_menu_bar, 
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left .et_header_style_split .mobile_menu_bar {
+    padding-bottom: 10px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_left #et-top-navigation {
+      padding-top: 9px !important;
+  }
+
+/*************************************************************/
+/****** App style mobile header for Centered Inline Logo Header Style *******/
+/*************************************************************/
+
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_split header#main-header {
+        padding: 3px;
+    }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_split .et_menu_container {
+    width:95%;
+  }
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_split #logo {
+        float: left;
+        margin-top:5px;
+    }
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_split #et_mobile_nav_menu {
+        margin-top: 0;
+    }
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_split .select_page {
+        display:none !important;
+    }
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_split #main-header .mobile_nav {
+        background-color: transparent !important;
+        margin-top:-24px;
+        -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+    }
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_split .et_mobile_menu {
+    top: 46px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_split .logo_container {
+    height: 50px !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_split .mobile_menu_bar_toggle {
+    margin-top: -20px !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_split:not(.divi-hacks-mobile-menu-fullscreen) ul.et_mobile_menu {
+    top: 21px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_split .et-cart-info {
+    margin: -10px 40px 0 0 !important;
+    float: right !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_split.divi-hacks-mobile-menu-slide-in ul.et_mobile_menu {
+    top: auto;
+    margin-top: 12px;
+  }
+
+/*************************************************************/
+/****** App style mobile header for Centered Logo Header Style *******/
+/*************************************************************/
+
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered #main-header {
+        padding: 6px !important;
+    }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered .et_menu_container {
+    width:95%;
+  }
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered #logo {
+        float: left !important;
+        max-width: 50%;
+        margin-top:3px;
+    }
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered #et_mobile_nav_menu {
+        margin-top: 0;
+        top:auto;
+    }
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered .select_page {
+        display:none !important;
+    }
+    .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered .mobile_nav {
+        background-color: transparent !important;
+    margin-top: -22px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+    }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered .mobile_menu_bar:before {
+      top: 3px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered .et_mobile_menu {
+    top: 46px;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered .logo_container {
+    height: 50px !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered .mobile_menu_bar_toggle {
+    margin-top: -28px !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_centered.divi-hacks-mobile-menu-slide-in .et_mobile_menu {
+    top: auto !important;
+    margin-top: 10px;
+  }
+
+/*************************************************************/
+/****** App style mobile header for Fullscreen and Slide-in Header Style *******/
+/*************************************************************/
+
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_fullscreen #et-top-navigation, 
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_slide #et-top-navigation {
+    height: 50px;
+    padding-top: 11px !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_fullscreen .et_slide_menu_top, 
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_slide .et_slide_menu_top {
+    padding: 0 !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_fullscreen .et_slide_in_menu_container .et_toggle_fullscreen_menu, 
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_slide 
+  .is-mobile.et_slide_in_menu_container .et_toggle_fullscreen_menu {
+    top: 10px !important;
+    right: 10px !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_fullscreen .et_slide_menu_top .et-search-form {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_slide .et_slide_menu_top .et-search-form {
+    margin-top: 55px !important;
+    margin-bottom: 5px !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_slide .et_slide_in_menu_container .et-search-form {
+    max-width: 90% !important;
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_slide .et_slide_menu_top {
+    background: transparent;
+    z-index: 99999999;
+    position: relative;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_slide .et_slide_in_menu_container.et_pb_slide_menu_opened #et-top-navigation {
+    padding-right: 315px !important;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_slide header#main-header {
+    z-index: 9999999;
+  }
+  .is-mobile.divi-hacks-app-mobile-header.et_header_style_slide .et_slide_in_menu_container ul#mobile_menu_slide {
+    padding: 70px 40px !important;
+  }
